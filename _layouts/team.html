@@ -1,3 +1,29 @@
 ---
-layout: default-nav
+layout: default-breadcrumbs
 ---
+<div class="parallax-container">
+      <div class="parallax"><img src="{{ page.banner }}"></div>
+</div>
+<div class="container">
+  <div class="col s12 m3">
+      <h2 class="header">{{ page.title }}</h2>
+      <div class="card horizontal">
+        <div class="card-image">
+          {% if staff.image-url %}
+            <img src="{{ staff.image-url }}">
+          {% else %}
+            <img src="https://www.gravatar.com/avatar/{{ staff.gravatar-hash }}?d=mm&s=200">
+          {% endif %}
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
