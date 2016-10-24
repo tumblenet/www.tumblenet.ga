@@ -1,0 +1,21 @@
+---
+layout: default-breadcrumbs
+---
+<div class="row container">
+  <div class="col s12">
+    <div class="card large">
+      {% if page.image_url %}
+      <div class="card-image">
+        <img src="{{ page.image_url }}">
+        <span class="card-title">{{ page.title }}</span>
+      </div>
+      <div class="card-content">
+      {% else %}
+      <div class="card-content">
+        <span class="card-title">{{ page.title }}</span>
+      {% endif %}
+          {{ content }}
+      </div>
+    </div>
+  </div>
+</div>

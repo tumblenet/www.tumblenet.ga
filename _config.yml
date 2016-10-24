@@ -1,0 +1,6 @@
+title: Tumble Network
+base-url: http://localhost:4000
+permalink: pretty
+collections:
+  team:
+    output: true

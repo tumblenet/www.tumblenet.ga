@@ -1,0 +1,30 @@
+---
+layout: default-breadcrumbs
+title: Team
+---
+<div class="row container">
+  {% for staff in site.team %}
+
+    <div class="col s12 m6 l3">
+      <div class="card">
+          <div class="card-image">
+            {% if staff.gravatar-hash %}
+              <img src="https://www.gravatar.com/avatar/{{ staff.gravatar-hash }}?s=200">
+            {% elsif staff.image-url %}
+              <img src="{{ staff.image-url }}">
+              {% else %}
+              <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y&s=200">
+            {% endif %}
+
+          </div>
+          <div class="card-content">
+            <span class="card-title">{{ staff.name }}</span>
+            {{ staff.ecerpt}}
+          </div>
+          <div class="card-action">
+            <a href="{{ staff.url }}">View {{ staff.name }}</a>
+          </div>
+        </div>
+      </div>
+  {% endfor %}
+</div>
