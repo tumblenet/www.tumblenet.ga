@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-<base href="{{ site.base-url }}">
+<base href="{{ site.url }}">
 <title>{{ page.title }} - {{ site.title }}</title>
 
 <!-- CSS  -->
@@ -13,7 +13,7 @@
 </head>
 <body>
 <nav class="red lighten-1" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">{% if site.logo-url %} <img src="{{ site.logo-url }}" alt="" /> {% else %}{{ site.title }}{% endif %}</a>
+  <div class="nav-wrapper container"><a id="logo-container" href="{{ site.url }}" class="brand-logo">{% if site.logo-url %} <img src="{{ site.logo-url }}"> {% else %}{{ site.title }}{% endif %}</a>
     <ul class="right hide-on-med-and-down">
       {% for item in site.data.nav %}
         <li {% if page.url contains item.href %}class="active"{% endif %}><a href="{{ item.href }}">{{ item.title }}</a></li>

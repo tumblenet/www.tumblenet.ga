@@ -1,5 +1,6 @@
 title: Tumble Network
-base-url: http://beta.tumblenet.tk
+url: http://beta.tumblenet.tk
+logo-url: images/logo.png
 permalink: pretty
 collections:
   team:
