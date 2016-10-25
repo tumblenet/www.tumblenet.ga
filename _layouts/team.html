@@ -2,7 +2,7 @@
 layout: default-breadcrumbs
 ---
 <div class="parallax-container">
-      <div class="parallax"><img src="{{ page.banner }}"></div>
+      <div class="parallax"><img src="{{ page.banner | default: "https://lh3.googleusercontent.com/WgnonLKXSzTXYXDLx9MeeLXvSSQemgwK_MZ6UkDpwnnlkUXfMm7w9G5XdAGpmzzOk6lX1oGzSKiVytvJu91uER4cmI5gA9ffsXKlkRFvmrRR1jx2SOMtnwZMpFzCVML9MlgiMvMTbcPbDaRzxkABnOW1pZYW-qNkq_jOYy-aay4wHkyBHff3g0vKLcN4-auQKTdRxnb31X3eMLSS4Ou1Q-KpWyGzHD1CDNCTifDFr7HPHsgsHs1EyDV6_UauAryob90eCYNkbZ8RkClVEsNE_aV6ioKnnZmEauPhfC5J2joRjlGUZv5M7gMO1YW_BtHKF2724GGSc8OlXSYodHVbgh8BI4GNIcGC-D5LsjzAvPa90BqJaIwWgHnaJQpn4LcuIvDnr3DMz_XwITm1maq6ZxguAvUT83G0vAIfEvNKi1BTaMp7fD8Dot-xcqFOVjyZxByn2PY-JJBztbk1o1z5nOzwYu_peJ8ju-NkxaIcdQKh_wikb4QxKjpZ6JQ44qvJC7xou9OXSGzEWTirMBVqRf8heb8iy9ghoSECPVYTyzz3I0hIDUWacY1t_Tqtuu2LL4_mAeaIAnYOxUbywS2Eii1uYAgaUgmU4Livt5m71GizWHZo=w1135-h638-no"}}"></div>
 </div>
 
 <div class="col s12 m7">
@@ -46,24 +46,37 @@ layout: default-breadcrumbs
 
 
 <div class="row">
-  <div class="col s12 m2 l3">
+  <div class="col s12 m6 l3">
     <div class="card-panel {{ page.color }}">
       <span class="">"{{ page.tagline }}"
       </span>
     </div>
+  </div>
+</div>
 
-    {% if page.twitter %}
+
+<div class="row">
+  {% if page.twitter %}
+  <div class="col s6 m6 l6">
     <div class="card {{ page.color }}">
       <div class="card-content white-text">
         <span class="card-title">Twtter Feed</span>
         <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter }}">Tweets by {{ page.twitter }}</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
-    {% endif %}
-
-
-
-
-
   </div>
+  {% endif %}
+
+
+  {% if page.facebook %}
+  <div class="col s6 m6 l6">
+    <div class="card {{ page.color }}">
+      <div class="card-content white-text">
+        <span class="card-title">Facebook Feed</span>
+        <div class="fb-page" data-href="https://www.facebook.com/{{ page.facebook }}/" data-tabs="timeline,massages,evants" data-width="1000" data-height="10000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/{{ page.facebook }}/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/{{ page.facebook }}/">{{ page.facebook }}</a></blockquote></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
 </div>
