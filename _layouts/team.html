@@ -4,79 +4,72 @@ layout: default-breadcrumbs
 <div class="parallax-container">
       <div class="parallax"><img src="{{ page.banner | default: "https://lh3.googleusercontent.com/WgnonLKXSzTXYXDLx9MeeLXvSSQemgwK_MZ6UkDpwnnlkUXfMm7w9G5XdAGpmzzOk6lX1oGzSKiVytvJu91uER4cmI5gA9ffsXKlkRFvmrRR1jx2SOMtnwZMpFzCVML9MlgiMvMTbcPbDaRzxkABnOW1pZYW-qNkq_jOYy-aay4wHkyBHff3g0vKLcN4-auQKTdRxnb31X3eMLSS4Ou1Q-KpWyGzHD1CDNCTifDFr7HPHsgsHs1EyDV6_UauAryob90eCYNkbZ8RkClVEsNE_aV6ioKnnZmEauPhfC5J2joRjlGUZv5M7gMO1YW_BtHKF2724GGSc8OlXSYodHVbgh8BI4GNIcGC-D5LsjzAvPa90BqJaIwWgHnaJQpn4LcuIvDnr3DMz_XwITm1maq6ZxguAvUT83G0vAIfEvNKi1BTaMp7fD8Dot-xcqFOVjyZxByn2PY-JJBztbk1o1z5nOzwYu_peJ8ju-NkxaIcdQKh_wikb4QxKjpZ6JQ44qvJC7xou9OXSGzEWTirMBVqRf8heb8iy9ghoSECPVYTyzz3I0hIDUWacY1t_Tqtuu2LL4_mAeaIAnYOxUbywS2Eii1uYAgaUgmU4Livt5m71GizWHZo=w1135-h638-no"}}"></div>
 </div>
-
-<div class="col s12 m7">
-  <h2 class="header">{{page.title}}</h2>
-  <div class="card horizontal">
-    <div class="card-image">
-      {% if staff.image-url %}
-      <img src="{{ staff.image-url }}">
-      {% else %}
-      <img src="https://www.gravatar.com/avatar/{{ page.gravatar-hash }}?d=mm&s=200">
-      {% endif %}
-    </div>
-    <div class="card-stacked">
-      <div class="card-content">
-        {{ content }}
-      </div>
-      <div class="card-action">
-        {% if page.twitter %}
-        <a href="https://twitter.com/{{ page.twitter }}" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @{{ page.twitter }}</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        {% endif %}
-
-        {% if page.youtube %}
-        <script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channel="{{ page.youtube }}" data-layout="default" data-count="default"></div>
-        {% endif %}
-
-        {% if page.github %}
-        <a class="github-button" href="https://github.com/{{ page.github }}" data-style="mega" data-count-href="/{{ page.github }}/followers" data-count-api="/users/{{ page.github }}#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @{{ page.github }} on GitHub">Follow @{{ page.github }}</a>
-        {% endif %}
-
-        {% if page.googleplus %}
-        <div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/+{{ page.googleplus }}" data-rel="publisher"></div>
-        {% endif %}
-
-        {% if page.facebook %}
-        <div class="fb-follow" data-href="https://www.facebook.com/{{ page.facebook }}" data-layout="button_count" data-size="large" data-show-faces="true"></div>
+<div class="container">
+  <div class="col s12 m7">
+    <h2 class="header">{{page.title}}</h2>
+    <div class="card horizontal {{ page.color }}">
+      <div class="card-image">
+        {% if staff.image-url %}
+        <img src="{{ staff.image-url }}">
+        {% else %}
+        <img src="https://www.gravatar.com/avatar/{{ page.gravatar-hash }}?d=mm&s=200">
         {% endif %}
       </div>
-    </div>
-  </div>
-</div>
+      <div class="card-stacked">
+        <div class="card-content">
+          {{ content }}
+        </div>
+        <div class="card-action">
+          {% if page.twitter %}
+          <a href="https://twitter.com/{{ page.twitter }}" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @{{ page.twitter }}</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          {% endif %}
 
+          {% if page.youtube %}
+          <script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channel="{{ page.youtube }}" data-layout="default" data-count="default"></div>
+          {% endif %}
 
-<div class="row">
-  <div class="col s12 m6 l3">
-    <div class="card-panel {{ page.color }}">
-      <span class="">"{{ page.tagline }}"
-      </span>
-    </div>
-  </div>
-</div>
+          {% if page.github %}
+          <a class="github-button" href="https://github.com/{{ page.github }}" data-style="mega" data-count-href="/{{ page.github }}/followers" data-count-api="/users/{{ page.github }}#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @{{ page.github }} on GitHub">Follow @{{ page.github }}</a>
+          {% endif %}
 
+          {% if page.googleplus %}
+          <div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/+{{ page.googleplus }}" data-rel="publisher"></div>
+          {% endif %}
 
-<div class="row">
-  {% if page.twitter %}
-  <div class="col s6 m6 l6">
-    <div class="card {{ page.color }}">
-      <div class="card-content white-text">
-        <span class="card-title">Twtter Feed</span>
-        <a class="twitter-timeline" href="https://twitter.com/{{ page.twitter }}">Tweets by {{ page.twitter }}</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </div>
-  </div>
-  {% endif %}
-
-
-  {% if page.facebook %}
-  <div class="col s6 m6 l6">
-    <div class="card {{ page.color }}">
-      <div class="card-content white-text">
-        <span class="card-title">Facebook Feed</span>
-        <div class="fb-page" data-href="https://www.facebook.com/{{ page.facebook }}/" data-tabs="timeline,massages,evants" data-width="1000" data-height="10000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/{{ page.facebook }}/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/{{ page.facebook }}/">{{ page.facebook }}</a></blockquote></div>
+          {% if page.facebook %}
+          <div class="fb-follow" data-href="https://www.facebook.com/{{ page.facebook }}" data-layout="button_count" data-size="large" data-show-faces="true"></div>
+          {% endif %}
         </div>
       </div>
     </div>
   </div>
-  {% endif %}
+
+  <div class="row">
+    <div class="col s12 m6 l3">
+      <div class="card-panel {{ page.color }}">
+        <span class="">"{{ page.tagline }}"
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          {% if page.twitter %}<li class="tab col s3"><a href="#tab-twitter">Twitter</a></li>{% endif %}
+          {% if page.facebook %}<li class="tab col s3 "><a href="#tab-facebook">Facebook</a></li>{% endif %}
+        </ul>
+      </div>
+      {% if page.twitter %}<div id="tab-twitter" class="col s12">
+
+        <a class="twitter-timeline" data-link-color="#F44336" href="https://twitter.com/{{ page.twitter }}">Tweets by {{ page.twitter }}</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      </div>{% endif %}
+      {% if page.facebook %}<div id="tab-facebook" class="col s12 m12 l12">
+
+        <div class="fb-page" data-href="https://www.facebook.com/{{ page.facebook }}/" data-tabs="timeline, events, messages" data-width="500" data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/{{ page.facebook }}/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/{{ page.facebook }}/">{{ page.facebook }}</a></blockquote></div>
+
+      </div>{% endif %}
+    </div>
+
 </div>
