@@ -4,26 +4,48 @@ layout: default-breadcrumbs
 <div class="parallax-container">
       <div class="parallax"><img src="{{ page.banner }}"></div>
 </div>
+
 <div class="container">
-  <div class="col s12 m3">
-      <h2 class="header">{{ page.title }}</h2>
-      <div class="card horizontal">
-        <div class="card-image">
-          {% if staff.image-url %}
-            <img src="{{ staff.image-url }}">
-          {% else %}
-            <img src="https://www.gravatar.com/avatar/{{ staff.gravatar-hash }}?d=mm&s=200">
-          {% endif %}
+
+  <div class="col s12 m7">
+    <h2 class="header">{{page.title}}</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        {% if staff.image-url %}
+        <img src="{{ staff.image-url }}">
+        {% else %}
+        <img src="https://www.gravatar.com/avatar/{{ page.gravatar-hash }}?d=mm&s=200">
+        {% endif %}
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          {{ content }}
         </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
+        <div class="card-action">
+          {% if page.twitter %}
+          <a href="https://twitter.com/{{ page.twitter }}" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @{{ page.twitter }}</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          {% endif %}
+
+          {% if page.youtube %}
+          <script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channel="{{ page.youtube }}" data-layout="default" data-count="default"></div>
+          {% endif %}
+
+          {% if page.github %}
+          <a class="github-button" href="https://github.com/{{ page.github }}" data-style="mega" data-count-href="/{{ page.github }}/followers" data-count-api="/users/{{ page.github }}#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @{{ page.github }} on GitHub">Follow @{{ page.github }}</a>
+          {% endif %}
+
+          {% if page.googleplus %}
+          <div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/+{{ page.googleplus }}" data-rel="publisher"></div>
+          {% endif %}
+
+          {% if page.facebook %}
+          <div class="fb-follow" data-href="https://www.facebook.com/{{ page.facebook }}" data-layout="button_count" data-size="large" data-show-faces="true"></div>
+          {% endif %}
         </div>
       </div>
     </div>
+  </div>
+
+
 
 </div>
