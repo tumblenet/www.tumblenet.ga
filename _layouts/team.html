@@ -54,22 +54,28 @@ layout: default-breadcrumbs
   </div>
 
   <div class="row">
-      <div class="col s12">
-        <ul class="tabs">
-          {% if page.twitter %}<li class="tab col s3"><a href="#tab-twitter">Twitter</a></li>{% endif %}
-          {% if page.facebook %}<li class="tab col s3 "><a href="#tab-facebook">Facebook</a></li>{% endif %}
-        </ul>
-      </div>
-      {% if page.twitter %}<div id="tab-twitter" class="col s12">
 
-        <a class="twitter-timeline" data-link-color="#F44336" href="https://twitter.com/{{ page.twitter }}">Tweets by {{ page.twitter }}</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-      </div>{% endif %}
-      {% if page.facebook %}<div id="tab-facebook" class="col s12 m12 l12">
-
-        <div class="fb-page" data-href="https://www.facebook.com/{{ page.facebook }}/" data-tabs="timeline, events, messages" data-width="500" data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/{{ page.facebook }}/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/{{ page.facebook }}/">{{ page.facebook }}</a></blockquote></div>
-
-      </div>{% endif %}
+    <div class="col s12">
+      <ul class="tabs">
+        {% if page.twitter %}<li class="tab col s3"><a href="#tab-twitter">Twitter</a></li>{% endif %}
+        {% if page.facebook %}<li class="tab col s3 "><a href="#tab-facebook">Facebook</a></li>{% endif %}
+      </ul>
     </div>
 
+
+    {% if page.twitter %}
+    <div id="tab-twitter" class="col s12">
+      <a class="twitter-timeline" data-link-color="#F44336" href="https://twitter.com/{{ page.twitter }}">Tweets by {{ page.twitter }}</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    {% endif %}
+
+
+    {% if page.facebook %}
+    <div id="tab-facebook" class="col s12 m12 l12">
+      <div class="fb-page" data-href="https://www.facebook.com/{{ page.facebook }}/" data-tabs="timeline, events, messages" data-width="500" data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/{{ page.facebook }}/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/{{ page.facebook }}/">{{ page.facebook }}</a></blockquote></div>
+    </div>
+    {% endif %}
+
+
+  </div>
 </div>
