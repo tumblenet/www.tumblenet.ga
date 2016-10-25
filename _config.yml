@@ -2,6 +2,7 @@ title: Tumble Network
 url: http://beta.tumblenet.tk
 logo-url: images/logo.png
 permalink: pretty
+excerpt_separator: <!--more-->
 collections:
   team:
     output: true

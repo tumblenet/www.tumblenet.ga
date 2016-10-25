@@ -15,3 +15,5 @@
 ---
 {% comment %} get gravatar hash here en.gravatar.com/site/check/ (copy email hash) {% endcomment %}
 TumbleGamer is a humble little YouTube channel containing remarkable things about gaming. All of this was made by one person who is the one who written this page. If you are reading this from the future, then we (even though is just one person) wonder if TumbleGamer is more than it was now when this page was written.
+<!--more-->
+test
