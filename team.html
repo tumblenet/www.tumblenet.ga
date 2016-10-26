@@ -16,7 +16,7 @@ title: Team
           </div>
           <div class="card-content">
             <span class="card-title">{{ staff.title }}</span>
-            <p>"{{ staff.tagline }}"</p>
+            {% if page.tagline %}<p>"{{ staff.tagline }}"</p>  {% endif %}
           </div>
           <div class="card-action">
             <a href="{{ staff.url }}" class="waves-effect waves-light btn red">View {{ staff.title }}</a>

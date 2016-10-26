@@ -41,13 +41,14 @@ layout: default-breadcrumbs
           {% endif %}
 
           {% if page.blog-url %}
-            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+              <a class="btn-floating btn-large waves-effect waves-light red" href="{{ page.blog-url }}"><i class="material-icons">comment</i></a>
           {% endif %}
         </div>
       </div>
     </div>
   </div>
 
+{% if page.tagline %}
   <div class="row">
     <div class="col s12 m6 l3">
       <div class="card-panel {{ page.color }}">
@@ -56,14 +57,16 @@ layout: default-breadcrumbs
       </div>
     </div>
   </div>
+    {% endif %}
 </div>
-  <div class="row">
 
+  <div class="row">
     <div class="col s12">
       <ul class="tabs">
         {% if page.twitter %}<li class="tab col s3 light-blue"><a href="#tab-twitter">Twitter</a></li>{% endif %}
         {% if page.facebook %}<li class="tab col s3 blue darken-3"><a href="#tab-facebook">Facebook</a></li>{% endif %}
         {% if page.twitch %}<li class="tab col s3 purple"><a href="#tab-twitch">Twitch</a></li>{% endif %}
+        {% if page.customtab %}<li class="tab col s3 {{ page.customtab.color }}"><a href="#tab-custom">{{ page.customtab.name }}</a></li>{% endif %}
       </ul>
     </div>
 
@@ -115,5 +118,14 @@ layout: default-breadcrumbs
 
     </div>
     {% endif %}
+
+    {% if page.customtab %}
+    <div id="tab-custom" class="col s12 m12 l12">
+      <div class="card-panel {{ page.customtab.color }}">
+        {{ page.customtab.content }}
+      </div>
+    </div>
+    {% endif %}
+
 
   </div>
