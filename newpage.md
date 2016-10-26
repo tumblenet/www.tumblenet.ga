@@ -1,4 +1,0 @@
----
-layout: page
-tiite:jkdfdsjfak
----
