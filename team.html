@@ -5,7 +5,7 @@ title: Team
 <div class="row container">
   {% for staff in site.team %}
 
-    <div class="col s12 m6 l3">
+    <div class="col s12 m4 l3">
       <div class="card {{ staff.color }}">
           <div class="card-image">
             {% if staff.image-url %}
@@ -19,7 +19,7 @@ title: Team
             {% if page.tagline %}<p>"{{ staff.tagline }}"</p>  {% endif %}
           </div>
           <div class="card-action">
-            <a href="{{ staff.url }}" class="waves-effect waves-light btn red">View {{ staff.title }}</a>
+            <a href="{{ staff.url }}" class="waves-effect waves-light btn red">View</a>
           </div>
         </div>
       </div>
