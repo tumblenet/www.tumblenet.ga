@@ -13,8 +13,8 @@
   github: TumbleNet
   googleplus:
   customtab:
-    name: Chat
-    color: black white-text
-    content: "<iframe width='1300' height='1000' src='https://console.api.ai/api-client/demo/embedded/tumble-bot'></iframe>"
+      name: Chat
+      color: black white-text
+      content: "<iframe width='1300' height='1000' src='https://console.api.ai/api-client/demo/embedded/tumble-bot'></iframe>"
 ---
 {% comment %} get gravatar hash here en.gravatar.com/site/check/ (copy email hash) {% endcomment %}
