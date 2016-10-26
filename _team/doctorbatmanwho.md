@@ -14,9 +14,9 @@
   github: doctorbatmanwho
   googleplus: DoctorBatmanWho
   customtab:
-    name: 
+    name: Contact me
     color: black white-text
-    content: ""
+    content: "Contact me at doctorbatman2015@outlook.com and doctorbatmanwho@tumblenet.tk for queries and information."
 ---
 {% comment %} get gravatar hash here en.gravatar.com/site/check/ (copy email hash) {% endcomment %}
 My channel specialises in soundtrack and rescore. I rescore scenes from movies and television shows and make soundtrack mixes. I particularly like to make videos about the Portal series, Batman, Pirates of the Caribbean, Doctor Who and Game of Thrones.
