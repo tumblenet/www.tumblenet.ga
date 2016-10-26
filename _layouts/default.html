@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--
+Welcome to this secret text under the page.
+
+You are probably seing this because you are in the inspect element part of the browser you are using right now
+
+Current date: {{ site.time | date_to_string }}
+-->
+
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="theme-color" content="#F44336">
@@ -101,6 +111,32 @@
 <script src="https://apis.google.com/js/platform.js" async defer>
   {lang: 'en-GB'}
 </script>
+
+
+{% comment %} START OF CHRISTMAS SNOW {% endcomment %}
+{% capture current_month %}{{ site.time | date: "%m" }}{% endcapture %}
+{% if current_month == "12" %}
+{% capture current_date %}{{ site.time | date: "%-d" }}{% endcapture %}
+{% capture days_until_xmas %}{{ 30 | minus: current_date }}{% endcapture %}
+<!-- required snowstorm JS, default behaviour -->
+<script src="js/snowstorm.js"></script>
+
+<!-- now, we'll customize the snowStorm object -->
+<script>
+{% unless current_date > "25" %}{% comment %} Check if its before christmass {% endcomment %}
+// Materialize.toast(message, displayLength, className, completeCallback);
+
+//say amount of days till chrstams
+  Materialize.toast('{{ days_until_xmas }} days until Christmas.', 4000) // 4000 is the duration of the toast
+{% endunless %}
+
+//CHRISTMAS SNOW
+snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
+snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+snowStorm.randomizeWind()
+</script>
+
+{% endif %}
 
 </body>
 </html>
