@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Videos
+author: doctorbatmanwho
 ---
 This is where notable videos from Tumble Network will be posted.
 <div class="row">

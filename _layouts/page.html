@@ -8,11 +8,13 @@ layout: default-breadcrumbs
       <div class="card-image">
         <img src="{{ page.image_url }}">
         <span class="card-title">{{ page.title }}</span>
+        <span class"grey-text">Page created by <a href="/team/{{ page.author }}">{{ page.author }}</a></span>
       </div>
       <div class="card-content">
       {% else %}
       <div class="card-content">
         <span class="card-title">{{ page.title }}</span>
+        <span class"grey-text">Page created by <a href="/team/{{ page.author }}">{{ page.author }}</a></span>
       {% endif %}
           {{ content }}
       </div>
