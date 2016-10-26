@@ -7,5 +7,4 @@ collections:
   team:
     output: true
   carousel:
-    output: false
   footer:
