@@ -8,7 +8,8 @@
   blog-url: http://doctorbatmanwho.blog.tumblenet.tk
   facebook: doctorbatmanwho
   twitter: drbatmanwho
-  youtube: doctorbatmanwho
+  youtube: UCIN6g84BIlbgodmCwJaB2OA
+  youtube-id: "true"
   twitch:
   github: doctorbatmanwho
   googleplus: DoctorBatmanWho

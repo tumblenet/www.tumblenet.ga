@@ -25,9 +25,8 @@ layout: default-breadcrumbs
           {% endif %}
 
           {% if page.youtube %}
-          <script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channel="{{ page.youtube }}" data-layout="default" data-count="default"></div>
+          <script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channel{% if page.youtube-id == "true" %}id{% endif %}="{{ page.youtube }}" data-layout="default" data-count="default"></div>
           {% endif %}
-
           {% if page.github %}
           <a class="github-button" href="https://github.com/{{ page.github }}" data-style="mega" data-count-href="/{{ page.github }}/followers" data-count-api="/users/{{ page.github }}#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @{{ page.github }} on GitHub">Follow @{{ page.github }}</a>
           {% endif %}
