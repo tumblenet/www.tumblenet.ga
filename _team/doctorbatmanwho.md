@@ -14,7 +14,7 @@
   github: doctorbatmanwho
   googleplus: DoctorBatmanWho
   customtab:
-    name: Contact me
+    name: "Contact me"
     color: black white-text
     content: "Contact me at doctorbatman2015@outlook.com and doctorbatmanwho@tumblenet.tk for queries and information."
 ---
