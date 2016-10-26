@@ -9,9 +9,9 @@ title: Home
       {% for slide in site.carousel %}
       <li>
         <img src="{{ slide.image }}"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        <div class="caption {{ slide.align}}-align">
+          <h3>{{ slide.title }}</h3>
+          <h5 class="light grey-text text-lighten-3">{{ slide.subtitle }}</h5>
         </div>
       </li>
       {% endfor %}
