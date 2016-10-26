@@ -1,8 +1,9 @@
 title: Tumble Network
-url: http://beta.tumblenet.tk
+url: http://localhost:4000
 logo-url: images/logo.png
 permalink: pretty
 excerpt_separator: <!--more-->
 collections:
   team:
     output: true
+  carousel:

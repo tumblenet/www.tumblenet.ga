@@ -13,6 +13,10 @@
   twitch:
   github: doctorbatmanwho
   googleplus: DoctorBatmanWho
+  customtab:
+    name: 
+    color: black white-text
+    content: ""
 ---
 {% comment %} get gravatar hash here en.gravatar.com/site/check/ (copy email hash) {% endcomment %}
 My channel specialises in soundtrack and rescore. I rescore scenes from movies and television shows and make soundtrack mixes. I particularly like to make videos about the Portal series, Batman, Pirates of the Caribbean, Doctor Who and Game of Thrones.
