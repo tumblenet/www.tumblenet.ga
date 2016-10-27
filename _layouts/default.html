@@ -58,25 +58,27 @@ Current date: {{ site.time | date_to_string }}
 }(document, 'script', 'facebook-jssdk'));</script>
 <!-- end facebook -->
 
-
-<nav class="red lighten-1" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="{{ site.url }}" class="brand-logo">{% if site.logo-url %} <img src="{{ site.logo-url }}"> {% else %}{{ site.title }}{% endif %}</a>
-    <ul class="right hide-on-med-and-down">
-      {% for item in site.data.nav %}
+<div class="navbar-fixed">
+  <nav class="red lighten-1 " role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="{{ site.url }}" class="brand-logo">{% if site.logo-url %} <img src="{{ site.logo-url }}"> {% else %}{{ site.title }}{% endif %}</a>
+      <ul class="right hide-on-med-and-down">
+        {% for item in site.data.nav %}
         <li {% if page.url contains item.href %}class="active"{% endif %}><a href="{{ item.href }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
+        {% endfor %}
+      </ul>
 
-    <ul id="nav-mobile" class="side-nav">
-      {% for item in site.data.nav %}
+      <ul id="nav-mobile" class="side-nav">
+        {% for item in site.data.nav %}
         <li><a href="{{ item.href }}" class="active">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-  </div>
-</nav>
+        {% endfor %}
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
 
 {{ content }}
+
 
 <footer class="page-footer red">
   <div class="container">
@@ -136,6 +138,8 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 snowStorm.randomizeWind()
 </script>
 
+
+<script id="dsq-count-scr" src="//tumble-network-beta.disqus.com/count.js" async></script>
 {% endif %}
 
 </body>

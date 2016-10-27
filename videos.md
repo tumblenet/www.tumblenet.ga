@@ -2,6 +2,7 @@
 layout: page
 title: Videos
 author: doctorbatmanwho
+comments: true
 ---
 This is where notable videos from Tumble Network will be posted.
 <div class="row">
@@ -10,5 +11,10 @@ This is where notable videos from Tumble Network will be posted.
 
 
 
-<!-- TO DBW: Add new VIDEOS above this COMMENT        IMPORTANT: Replace WIDTH with the CLASS element I made above -->
+<!-- TO DBW: Add new VIDEOS above this COMMENT
+     
+ALSO FOR EVERY NEW VIDEO PLEASE CHANGE...
+width="###" ==>  class="col s12 m6 l3"
+height="###" ==> height="auto"
+-->
 </div>
