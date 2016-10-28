@@ -1,5 +1,6 @@
 ---
   layout: team
+  author-id: tumblebot
   title: TumbleBot
   tagline:
   color: black white-text

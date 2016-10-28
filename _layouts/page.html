@@ -1,6 +1,7 @@
 ---
 layout: default-breadcrumbs
 ---
+{% assign author = site.team | where:"author-id", page.author  | first %}
 <div class="row container">
   <div class="col s12">
     <div class="card">
@@ -8,14 +9,22 @@ layout: default-breadcrumbs
       <div class="card-image">
         <img src="{{ page.image_url }}">
         <span class="card-title">{{ page.title }}</span>
-        <span class"grey-text">Page created by <a href="/team/{{ page.author }}">{{ page.author }}</a></span>
+
       </div>
       <div class="card-content">
       {% else %}
       <div class="card-content">
         <span class="card-title">{{ page.title }}</span>
-        <span class"grey-text">Page created by <a href="/team/{{ page.author }}">{{ page.author }}</a></span>
       {% endif %}
+        <a href="{{ author.url }}"><div class="chip">
+            {% if author.image-url %}
+            <img src="{{ author.image-url }}" alt="Contact Person">
+            {% else %}
+            <img src="https://www.gravatar.com/avatar/{{ author.gravatar-hash }}?d=mm&s=200" alt="Contact Person">
+            {% endif %}
+            {{ author.title }}
+          </div></a>
+
           {{ content }}
       </div>
     </div>

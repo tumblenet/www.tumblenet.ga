@@ -1,5 +1,6 @@
 ---
   layout: team
+  author-id: tumblegamer
   title: TumbleGamer
   tagline: Where gamers unite!
   color: amber white-text

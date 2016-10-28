@@ -1,5 +1,6 @@
 ---
   layout: team
+  author-id: doctorbatmanwho
   title: Doctor Batman Who
   tagline: "The Hero You Needed"
   color: black white-text
