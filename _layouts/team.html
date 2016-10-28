@@ -1,6 +1,7 @@
 ---
 layout: default-breadcrumbs
 ---
+{% assign posts = site.posts | where:"author", page.author-id %}
 <div class="parallax-container">
       <div class="parallax"><img src="{{ page.banner | default: "https://lh3.googleusercontent.com/WgnonLKXSzTXYXDLx9MeeLXvSSQemgwK_MZ6UkDpwnnlkUXfMm7w9G5XdAGpmzzOk6lX1oGzSKiVytvJu91uER4cmI5gA9ffsXKlkRFvmrRR1jx2SOMtnwZMpFzCVML9MlgiMvMTbcPbDaRzxkABnOW1pZYW-qNkq_jOYy-aay4wHkyBHff3g0vKLcN4-auQKTdRxnb31X3eMLSS4Ou1Q-KpWyGzHD1CDNCTifDFr7HPHsgsHs1EyDV6_UauAryob90eCYNkbZ8RkClVEsNE_aV6ioKnnZmEauPhfC5J2joRjlGUZv5M7gMO1YW_BtHKF2724GGSc8OlXSYodHVbgh8BI4GNIcGC-D5LsjzAvPa90BqJaIwWgHnaJQpn4LcuIvDnr3DMz_XwITm1maq6ZxguAvUT83G0vAIfEvNKi1BTaMp7fD8Dot-xcqFOVjyZxByn2PY-JJBztbk1o1z5nOzwYu_peJ8ju-NkxaIcdQKh_wikb4QxKjpZ6JQ44qvJC7xou9OXSGzEWTirMBVqRf8heb8iy9ghoSECPVYTyzz3I0hIDUWacY1t_Tqtuu2LL4_mAeaIAnYOxUbywS2Eii1uYAgaUgmU4Livt5m71GizWHZo=w1135-h638-no"}}"></div>
 </div>
@@ -62,10 +63,11 @@ layout: default-breadcrumbs
   <div class="row">
     <div class="col s12">
       <ul class="tabs">
-        {% if page.twitter %}<li class="tab col s3 light-blue"><a href="#tab-twitter">Twitter</a></li>{% endif %}
-        {% if page.facebook %}<li class="tab col s3 blue darken-3"><a href="#tab-facebook">Facebook</a></li>{% endif %}
-        {% if page.twitch %}<li class="tab col s3 purple"><a href="#tab-twitch">Twitch</a></li>{% endif %}
-        {% if page.customtab %}<li class="tab col s3 {{ page.customtab.color }}"><a href="#tab-custom">{{ page.customtab.name }}</a></li>{% endif %}
+        {% if posts.first.id %}<li class="tab col s12 m6 l3 red"><a href="#tab-posts">Posts</a></li>{% endif %}
+        {% if page.twitter %}<li class="tab col s12 m6 l3 light-blue"><a href="#tab-twitter">Twitter</a></li>{% endif %}
+        {% if page.facebook %}<li class="tab col s12 m6 l3 blue darken-3"><a href="#tab-facebook">Facebook</a></li>{% endif %}
+        {% if page.twitch %}<li class="tab col s12 m6 l3 purple"><a href="#tab-twitch">Twitch</a></li>{% endif %}
+        {% if page.customtab %}<li class="tab col s12 m6 l3 {{ page.customtab.color }}"><a href="#tab-custom">{{ page.customtab.name }}</a></li>{% endif %}
       </ul>
     </div>
 
@@ -123,6 +125,51 @@ layout: default-breadcrumbs
       <div class="card-panel {{ page.customtab.color }}">
         {{ page.customtab.content }}
       </div>
+    </div>
+    {% endif %}
+
+    {% if posts %}
+    <div id="tab-posts">
+      {% for post in posts %}
+      <div class="col s12 m6 l6">
+      {% assign author = site.team | where:"author-id", post.author | first %}
+      <div class="card">
+        {% if post.image_url %}
+        <div class="card-image">
+          <img src="{{ post.image_url }}">
+          <span class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></span>
+
+        </div>
+        <div class="card-content">
+        {% else %}
+        <div class="card-content">
+          <span class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></span>{{ ' ' }}{{ post.date | date_to_string }}
+        {% endif %}
+        <p>
+          <a href="{{ author.url }}">
+            <div class="chip">
+              {% if author.image-url %}
+              <img src="{{ author.image-url }}" alt="Contact Person">
+              {% else %}
+              <img src="https://www.gravatar.com/avatar/{{ author.gravatar-hash }}?d=mm&s=200" alt="Contact Person">
+              {% endif %}{{ author.title }}
+            </div>
+          </a>
+          {% for category in post.categories %}
+            <div class="chip">{{ category }}</div>
+          {% endfor %}
+        </p>
+
+            {{ post.excerpt }}
+        </div>
+        <div class="card-action">
+          {% unless post.excerpt == post.content %}
+          <a href="{{ post.url }}">Read more...</a>
+          {% endunless %}
+        </div>
+      </div>
+        </div>
+      {% endfor %}
     </div>
     {% endif %}
 
