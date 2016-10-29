@@ -25,17 +25,31 @@ layout: default-breadcrumbs
             {% endif %}{{ author.title }}
           </div>
         </a>
+      </p>
+
+
+        <ul class="collapsible popout"  data-collapsible="accordion">
+    {% if page.categories %}
+    <li>
+      <div class="collapsible-header"><i class="material-icons">list</i>Catagories</div>
+      <div class="collapsible-body">
         {% for category in page.categories %}
           <div class="chip">{{ category }}</div>
         {% endfor %}
-      </p>
-      {% if page.tags %}
-      <p>
-        Tags: {% for tag in page.tags %}
+      </div>
+    </li>
+    {% endif %}
+        {% if page.tags %}<li>
+      <div class="collapsible-header"><i class="material-icons">label</i>Tags</div>
+      <div class="collapsible-body">
+        {% for tag in page.tags %}
         <div class="chip">{{ tag }}</div>
         {% endfor %}
-      </p>
-      {% endif %}
+      </div>
+    </li>{% endif %}
+  </ul>
+
+
           {{ content  }}
       </div>
     </div>
