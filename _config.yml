@@ -9,3 +9,4 @@ collections:
   carousel:
     output: false
   footer:
+  services:

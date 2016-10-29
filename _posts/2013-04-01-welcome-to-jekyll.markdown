@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 categories: jekyll update
-tags: these are tags
+tags: these are tags face face
 author: tumblegamer
 ---
 
