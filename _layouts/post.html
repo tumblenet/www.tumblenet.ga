@@ -8,13 +8,12 @@ layout: default-breadcrumbs
       {% if page.image_url %}
       <div class="card-image">
         <img src="{{ page.image_url }}">
-        <span class="card-title"><a href="{{ page.url }}">{{ page.title }}</a></span>
-
+        <span class="card-title">{{ page.title }}</span>{{ '   ' }}{{ page.date | date_to_string }}
       </div>
       <div class="card-content">
       {% else %}
       <div class="card-content">
-        <span class="card-title"><a href="{{ page.url }}">{{ page.title }}</a></span>{{ ' ' }}{{ page.date | date_to_string }}
+        <span class="card-title">{{ page.title }}</span>{{ '   ' }}{{ page.date | date_to_string }}
       {% endif %}
       <p>
         <a href="{{ author.url }}">
