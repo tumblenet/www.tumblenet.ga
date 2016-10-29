@@ -1,28 +1,9 @@
 ---
 layout: default-breadcrumbs
-title: Team
+title: Services
 ---
 <div class="row container">
   {% for service in site.services %}
-
-    <div class="col s12 m4 l3">
-      <div class="card {{ service.color }}">
-          {% if service.image-url %}
-          <div class="card-image">
-            <img src="{{ service.image-url }}">
-            <span class="card-title">{{ staff.title }}</span>
-          </div>
-          <div class="card-content">
-          {% else %}
-          <div class="card-content">
-            <span class="card-title">{{ service.title }}</span>
-          {% endif %}
-          {{ service.content }}
-          </div>
-          <div class="card-action">
-            <a href="{{ service.url }}" class="waves-effect waves-light btn red">View</a>
-          </div>
-        </div>
-      </div>
+  {% include service-loop.html %}
   {% endfor %}
 </div>

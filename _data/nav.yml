@@ -6,3 +6,10 @@
   href: /videos/
 - title: Blog
   href: /blog/
+  dropdown:
+  - title: Tags
+    href: /blog/tags/
+  - title: Categories
+    href: /blog/categories/
+- title: Services
+  href: /services/

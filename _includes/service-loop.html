@@ -1,0 +1,36 @@
+<div class="col {{ include.spacing | default: "s12 m6 l6" }}">
+  <div class="card white black-text sticky-action">
+      {% if service.image-url %}
+      <div class="card-image">
+        <img src="{{ service.image-url }}" class=" activator">
+        <span class="card-title activator">{{ service.title }}</span>
+      </div>
+      <div class="card-content ">
+      {% else %}
+      <div class="card-content">
+        <span class="card-title activator">{{ service.title }}</span>
+      {% endif %}
+
+      {{ service.content }}
+      </div>
+      {% if service.href %}
+      <div class="card-action">
+        <a href="{{ service.href }}">View</a>
+        {% if service.links %}
+          <a href="{{ page.url }}#" class="activator">More...</a>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if service.links %}
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{ service.title }}<i class="material-icons right">close</i></span>
+        <ul>
+          {% for link in service.links %}
+            <li><a href="{{ link.href }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </div>

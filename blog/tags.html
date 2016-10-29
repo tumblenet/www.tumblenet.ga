@@ -1,0 +1,78 @@
+---
+layout: default-breadcrumbs
+title: Tags
+---
+
+{% comment %}
+=======================
+The following part extracts all the tags from your posts and sort tags, so that you do not need to manually collect your tags to a place.
+=======================
+{% endcomment %}
+{% assign rawtags = "" %}
+{% for post in site.posts %}
+	{% assign ttags = post.tags | join:'|' | append:'|' %}
+	{% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+{% comment %}
+=======================
+The following part removes dulpicated tags and invalid tags like blank tag.
+=======================
+{% endcomment %}
+{% assign tags = "" %}
+{% for tag in rawtags %}
+	{% if tag != "" %}
+		{% if tags == "" %}
+			{% assign tags = tag | split:'|' %}
+		{% endif %}
+		{% unless tags contains tag %}
+			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+
+
+
+<div class="row">
+  <div class="col s12 m9 l10">
+
+<div id="top" class="section scrollspy">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Tags</span>
+        <ul>
+        {% for tag in tags %}
+        <li><div class="chip">
+          <a href="{{ page.url }}#{{ tag | slugize }}">{{ tag | slugize }}</a>
+        </div></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+</div>
+
+    {% for tag in tags %}
+      <div id="{{ tag | slugize }}" class="section scrollspy">
+        <h3 class="tag-head">Tag: {{ tag }}</h3>
+        <a name="{{ tag | slugize }}"></a>
+        <div class="row">
+          {% for post in site.posts %}
+						{% if post.tags contains tag %}
+						  {% include post-loop.html %}
+						{% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="col hide-on-small-only m3 l2">
+    <ul class="section table-of-contents pinned">
+      <h5>Tags</h5>
+      <!--li><a href="#top">top</a></li-->
+      {% for tag in tags %}
+        <li><a href="#{{ tag | slugize }}">{{ tag | slugize }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

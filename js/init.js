@@ -5,6 +5,7 @@
     $('.parallax').parallax();
     $('ul.tabs').tabs();
     $('.slider').slider({full_width: true});
+    $('.scrollspy').scrollSpy();
 
 
   }); // end of document ready

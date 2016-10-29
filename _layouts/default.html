@@ -59,11 +59,39 @@ Current date: {{ site.time | date_to_string }}
 <!-- end facebook -->
 
 <div class="navbar-fixed">
+
+{% for item in site.data.nav %}
+  {% if item.dropdown %}
+  <ul id="dropdown{{ forloop.index }}" class="dropdown-content">
+    <li><a href="{{ item.href }}">{{ item.title }}</a></li>
+    {% for ditem in item.dropdown %}
+      {% if ditem.title == "divider" %}
+        <li class="divider"></li>
+      {% else %}
+        <li><a href="{{ ditem.href }}">{{ ditem.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endfor %}
+
+
+{% comment %}
+if is dropdown
+class="dropdown-button" href="{{page.url}}#" data-activates="dropdown{{ forloop.index }}"
+
+else
+href="{{ item.href }}"
+
+ {% endcomment %}
+
+
+
   <nav class="red" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="{{ site.url }}" class="brand-logo">{% if site.logo-url %} <img src="{{ site.logo-url }}"> {% else %}{{ site.title }}{% endif %}</a>
       <ul class="right hide-on-med-and-down">
         {% for item in site.data.nav %}
-        <li {% if page.url contains item.href %}class="active"{% endif %}><a href="{{ item.href }}">{{ item.title }}</a></li>
+        <li {% if page.url contains item.href %}class="active"{% endif %}><a {% if item.dropdown %}class="dropdown-button" href="{{page.url}}#" data-activates="dropdown{{ forloop.index }}"{% else %}href="{{ item.href }}"{% endif %}>{{ item.title }}{% if item.href == "/blog/" %}<span class="new badge" data-badge-caption="post(s)">{{ site.posts.size }}</span>{% endif %}{% if item.dropdown %}<i class="material-icons right">arrow_drop_down</i>{% endif %}</a></li>
         {% endfor %}
       </ul>
       <ul id="nav-mobile" class="side-nav">
