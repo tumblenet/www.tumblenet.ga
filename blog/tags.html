@@ -54,6 +54,7 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 
     {% for tag in tags %}
       <div id="{{ tag | slugize }}" class="section scrollspy">
+				<br><br>
         <h3 class="tag-head">Tag: {{ tag }}</h3>
         <a name="{{ tag | slugize }}"></a>
         <div class="row">
