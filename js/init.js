@@ -6,6 +6,7 @@
     $('ul.tabs').tabs();
     $('.slider').slider({full_width: true});
     $('.scrollspy').scrollSpy();
+    $(".dropdown-button").dropdown();
 
 
   }); // end of document ready

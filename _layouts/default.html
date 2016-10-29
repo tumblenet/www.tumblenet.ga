@@ -72,6 +72,16 @@ Current date: {{ site.time | date_to_string }}
       {% endif %}
     {% endfor %}
   </ul>
+  <ul id="mobile-dropdown{{ forloop.index }}" class="dropdown-content">
+    <li><a href="{{ item.href }}">{{ item.title }}</a></li>
+    {% for ditem in item.dropdown %}
+      {% if ditem.title == "divider" %}
+        <li class="divider"></li>
+      {% else %}
+        <li><a href="{{ ditem.href }}">{{ ditem.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   {% endif %}
 {% endfor %}
 
@@ -91,12 +101,52 @@ href="{{ item.href }}"
     <div class="nav-wrapper container"><a id="logo-container" href="{{ site.url }}" class="brand-logo">{% if site.logo-url %} <img src="{{ site.logo-url }}"> {% else %}{{ site.title }}{% endif %}</a>
       <ul class="right hide-on-med-and-down">
         {% for item in site.data.nav %}
-          {% include nav.html %}
+
+
+        <li {% if page.url contains item.href %}class="active"{% endif %}>
+          <a {% if item.dropdown %}
+          class="dropdown-button" href="{{ page.url }}#" data-activates="dropdown{{ forloop.index }}"
+          {% else %}
+          href="{{ item.href }}"
+          {% endif %}>
+            {{ item.title }}
+            {% if item.href == "/blog/" %}
+            <span class="new badge" data-badge-caption="post(s)">
+              {{ site.posts.size }}
+            </span>
+            {% endif %}
+            {% if item.dropdown %}
+            <i class="material-icons right">arrow_drop_down</i>
+            {% endif %}
+          </a>
+        </li>
+
+
         {% endfor %}
       </ul>
       <ul id="nav-mobile" class="side-nav">
         {% for item in site.data.nav %}
-        {% include nav.html %}
+
+
+        <li {% if page.url contains item.href %}class="active"{% endif %}>
+          <a {% if item.dropdown %}
+          class="dropdown-button" href="{{ page.url }}#" data-activates="mobile-dropdown{{ forloop.index }}"
+          {% else %}
+          href="{{ item.href }}"
+          {% endif %}>
+            {{ item.title }}
+            {% if item.href == "/blog/" %}
+            <span class="new badge" data-badge-caption="post(s)">
+              {{ site.posts.size }}
+            </span>
+            {% endif %}
+            {% if item.dropdown %}
+            <i class="material-icons right">arrow_drop_down</i>
+            {% endif %}
+          </a>
+        </li>
+
+
         {% endfor %}
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
