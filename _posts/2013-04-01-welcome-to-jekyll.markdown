@@ -2,8 +2,8 @@
 layout: post
 title:  "Welcome to Jekyll!"
 categories: jekyll update
-tags: face nose face nose face nose
-author: doctorbatmanwho
+tags: these are tags
+author: tumblegamer
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
