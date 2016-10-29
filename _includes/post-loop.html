@@ -27,12 +27,12 @@
       <a href="/blog/categories/#{{ category | slugize }}"><div class="chip">{{ category }}</div></a>
     {% endfor %}
   </p>
-
+  <a href="{{ post.url }}#disqus_thread"></a>
       {{ post.excerpt }}
   </div>
   <div class="card-action">
     {% unless post.excerpt == post.content %}
-    <a href="{{ post.url }}">Read more...</a>
+    <a href="{{ post.url }}#disqus_thread">Read more...</a>
     {% endunless %}
   </div>
 </div>
