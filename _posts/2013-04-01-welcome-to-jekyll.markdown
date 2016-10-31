@@ -2,7 +2,6 @@
 layout: post
 title:  "Welcome to Jekyll!"
 categories: jekyll update
-tags: these are tags
 author: tumblegamer
 comments: true
 ---
