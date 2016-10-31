@@ -1,4 +1,4 @@
-<div class="col {{ include.spacing | default: "s12 m6 l6" }}">
+<div class="col {{ include.spacing | default: "s12 m6 l3" }}">
   <div class="card white black-text sticky-action">
       {% if service.image-url %}
       <div class="card-image">
@@ -11,7 +11,7 @@
         <span class="card-title activator">{{ service.title }}</span>
       {% endif %}
 
-      {{ service.content }}
+      <p>{{ service.text }}</p>
       </div>
       {% if service.href %}
       <div class="card-action">

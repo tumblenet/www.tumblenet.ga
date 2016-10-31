@@ -45,8 +45,23 @@ Current date: {{ site.time | date_to_string }}
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+<!--PRELOADER-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+<script type='text/javascript' src='js/loadImg.js'></script>
+<script type='text/javascript'>
+    $(function(){
+        $('img').imgPreload()
+    })
+</script>
+<!--PRELOADER-->
 </head>
 <body>
+<div class="se-pre-con"></div>
 <!-- Facebook -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
