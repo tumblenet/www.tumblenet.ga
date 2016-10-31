@@ -49,24 +49,20 @@ title: Archive
             {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
             {% if forloop.first %}
-            <li><a href="#{{ this_year }}">(forloop.first){{this_year}}</a></li>
-            <li><a href="#{{ this_year }}-{{ this_month }}">(forloop.first){{ this_month }}</a></l1>
-            <ul>
+            <li><a href="#{{ this_year }}">(forloop.first){{this_year}}</a>
+            <ul><li><a href="#{{ this_year }}-{{ this_month }}">(forloop.first){{ this_month }}</a></l1>
             {% endif %}
 
             {% if forloop.last %}
             </ul>
             {% else %}
                 {% if this_year != next_year %}
-                </ul>
-                <li><a href="#{{ next_year }}">(this_year != next_year){{next_year}}</a></l1>
-                <li><a href="#{{ next_year }}-{{ next_month }}">(this_year != next_year){{ next_month }}</a></l1>
-                <ul>
+                </ul></l1>
+                <li><a href="#{{ next_year }}">(this_year != next_year){{next_year}}</a>
+                <ul><li><a href="#{{ next_year }}-{{ next_month }}">(this_year != next_year){{ next_month }}</a></l1>
                 {% else %}
                     {% if this_month != next_month %}
-                    </ul>
                     <li><a href="#{{ this_year }}-{{ next_month }}">(this_month != next_month){{ next_month }}</a></l1>
-                    <ul>
                     {% endif %}
                 {% endif %}
             {% endif %}
