@@ -50,7 +50,7 @@ title: Archive
 
             {% if forloop.first %}
             <li><a href="#{{ this_year }}">{{this_year}}</a></li>
-            <li><a href="#{{ this_year }}-{{ this_month }}">| {{ this_month }}</a></l1>
+            <li><a href="#{{ this_year }}-{{ this_month }}">|--- {{ this_month }}</a></l1>
             <ul>
             {% endif %}
 
@@ -60,12 +60,12 @@ title: Archive
                 {% if this_year != next_year %}
                 </ul>
                 <li><a href="#{{ next_year }}">{{next_year}}</a></l1>
-                <li><a href="#{{ next_year }}-{{ next_month }}">| {{ next_month }}</a></l1>
+                <li><a href="#{{ next_year }}-{{ next_month }}">|--- {{ next_month }}</a></l1>
                 <ul>
                 {% else %}
                     {% if this_month != next_month %}
                     </ul>
-                    <li><a href="#{{ this_year }}-{{ next_month }}">| {{ next_month }}</a></l1>
+                    <li><a href="#{{ this_year }}-{{ next_month }}">|--- {{ next_month }}</a></l1>
                     <ul>
                     {% endif %}
                 {% endif %}
