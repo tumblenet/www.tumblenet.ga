@@ -36,44 +36,40 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 
 <div class="row">
   <div class="col s12 m9 l10">
-
-<div id="top" class="section scrollspy">
-    <div class="card">
-      <div class="card-content">
-        <span class="card-title">Tags</span>
-        <ul>
-        {% for tag in tags %}
-        <li><div class="chip">
-          <a href="{{ page.url }}#{{ tag | slugize }}">{{ tag | slugize }}</a>
-        </div></li>
-        {% endfor %}
-        </ul>
-      </div>
-    </div>
-</div>
-
-    {% for tag in tags %}
-      <div id="{{ tag | slugize }}" class="section scrollspy">
+{% for tag in tags %}
+	{% assign letter = tag | slice: 0  %}
+		{% unless current_letter == letter %}
+			{% assign current_letter = letter %}
+			{% unless forloop.first %}
+		</div>
+		{% endunless %}
+		<div id="{{ letter | slugize }}" class="section scrollspy">
+	{% endunless %}
+			<div id="{{ tag | slugize }}">
 				<br><br>
-        <h3 class="tag-head">Tag: {{ tag }}</h3>
-        <a name="{{ tag | slugize }}"></a>
-        <div class="row">
-          {% for post in site.posts %}
+				<a href="{{ page.url }}#{{ tag | slugize }}"><h3 class="tag-head">Tag: {{ tag }}</h3></a>
+				<div class="row">
+					{% for post in site.posts %}
 						{% if post.tags contains tag %}
-						  {% include post-loop.html %}
+							{% include post-loop.html %}
 						{% endif %}
-          {% endfor %}
-        </div>
-      </div>
-    {% endfor %}
+					{% endfor %}
+				</div>
+			</div>
+
+{% endfor %}
+		</div>
   </div>
   <div class="col hide-on-small-only m3 l2">
-    <ul class="section table-of-contents pinned">
-      <h5>Tags</h5>
-      <!--li><a href="#top">top</a></li-->
-      {% for tag in tags %}
-        <li><a href="#{{ tag | slugize }}">{{ tag | slugize }}</a></li>
-      {% endfor %}
-    </ul>
+		<div class="toc-wrapper" style="top: 0px;">
+			<ul class="section table-of-contents pinned pin-top">
+				<h5>Tags</h5>
+				<!--li><a href="#top">top</a></li-->
+				{% assign letters = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z" | split:',' %}
+				{% for letter in letters %}
+				<li><a href="#{{ letter | slugize }}">{{ letter | upcase }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
   </div>
 </div>
