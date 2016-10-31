@@ -31,7 +31,7 @@ layout: default-breadcrumbs
   <ul class="collapsible popout" data-collapsible="accordion">
     {% if page.categories %}
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>Catagories</div>
+      <div class="collapsible-header"><i class="material-icons">list</i>Categories</div>
       <div class="collapsible-body">
         {% for category in page.categories %}
           <a href="/blog/categories/#{{ category | slugize }}"><div class="chip">{{ category }}</div></a>
