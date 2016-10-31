@@ -33,41 +33,64 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 {% endfor %}
 
 
-
 <div class="row">
   <div class="col s12 m9 l10">
-{% for tag in tags %}
-	{% assign letter = tag | slice: 0  %}
-		{% unless current_letter == letter %}
-			{% assign current_letter = letter %}
-			{% unless forloop.first %}
-		</div>
-		{% endunless %}
-		<div id="{{ letter | slugize }}" class="section scrollspy">
-	{% endunless %}
-			<div id="{{ tag | slugize }}">
+		{% if tags %}
+		{% for tag in tags %}
+			{% assign letter = tag | slice: 0  %}
+				{% unless current_letter == letter %}
+				{% assign letters = letters | append: letter | append: ',' %}
+					{% assign current_letter = letter %}
+					{% unless forloop.first %}
+				</div>
+				{% endunless %}
+				<div id="{{ letter | slugize }}" class="section scrollspy">
+			{% endunless %}
+					<div id="{{ tag | slugize }}">
+						<br><br>
+						<a href="{{ page.url }}#{{ tag | slugize }}"><h3 class="tag-head">Tag: {{ tag }}</h3></a>
+						<div class="row">
+							{% for post in site.posts %}
+								{% if post.tags contains tag %}
+									{% include post-loop.html %}
+								{% endif %}
+							{% endfor %}
+						</div>
+					</div>
+					{% else %}
+		<div id="top" class="section scrollspy">
+			<div id="no-tags">
 				<br><br>
-				<a href="{{ page.url }}#{{ tag | slugize }}"><h3 class="tag-head">Tag: {{ tag }}</h3></a>
+				<a href="{{ page.url }}#no-tags"><h3 class="tag-head">No Tags</h3></a>
 				<div class="row">
-					{% for post in site.posts %}
-						{% if post.tags contains tag %}
-							{% include post-loop.html %}
-						{% endif %}
-					{% endfor %}
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title">No Tags</span>
+							<p>	Sorry there are currently no tags available</p>
+								<p>Either...</p>
+								<ul class="collection">
+									<li class="collection-item">There are no posts</li>
+									<li class="collection-item">No posts have tags currently.</li>
+								</ul>
+						</div>
 				</div>
 			</div>
+		</div>
+		{% endfor %}
+		{% endif %}
 
-{% endfor %}
 		</div>
   </div>
+
   <div class="col hide-on-small-only m3 l2">
 		<div class="toc-wrapper" style="top: 0px;">
-			<ul class="section table-of-contents pinned pin-top">
+			<ul class="section table-of-contents pinned pin-top row">
 				<h5>Tags</h5>
 				<!--li><a href="#top">top</a></li-->
-				{% assign letters = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z" | split:',' %}
-				{% for letter in letters %}
-				<li><a href="#{{ letter | slugize }}">{{ letter | upcase }}</a></li>
+				{% assign letters_alpha = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z" | split:',' %}
+				{% assign letters = letters | split:',' %}
+				{% for letter in letters_alpha %}
+				<li class="col m4 l4"><a {% if letters contains letter %}href="#{{ letter | slugize }}"{% endif %} class="btn-flat {% unless letters contains letter %}disabled{% endunless %}">{{ letter | upcase }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
