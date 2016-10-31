@@ -24,28 +24,7 @@ title: Home
 <h2>Services</h2>
 
 <div class="row container">
-  {% for service in site.services limit: 4 %}
-
-    <div class="col s12 m4 l3">
-      <div class="card white black-text">
-          {% if service.image-url %}
-          <div class="card-image">
-            <img src="{{ service.image-url }}">
-            <span class="card-title">{{ service.title }}</span>
-          </div>
-          <div class="card-content">
-          {% else %}
-          <div class="card-content">
-            <span class="card-title">{{ service.title }}</span>
-          {% endif %}
-          {{ service.content }}
-          </div>
-          <div class="card-action">
-            <a href="{{ service.url }}" class="waves-effect waves-light btn red">View</a>
-          </div>
-        </div>
-      </div>
-  {% endfor %}
+  {% include service-loop.html %}
 </div>
 
 
