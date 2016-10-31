@@ -33,7 +33,7 @@ Current date: {{ site.time | date_to_string }}
    <meta name="msapplication-TileImage" content="https://lh3.googleusercontent.com/MQEfkFYKXNELVopX-wIfDwLqW2wQ1Z3ooBpP-D8cUNpopX4TWFnddzW0Asn_2gfNZVuobObeifbN4tgS9TuZx13vnXQxXvMcebxc4zOoGiikrWi6HcnzOea-YD4BNmJuN7CwCCzKy6Y_kQObpDPqHy5BMaA7vE1wvs7urK-IKSLAlaJokqwr5UvF-R8NHtHT9usNl6Ed3HBf_qeueLOjqUhiThUjLrtPWHFnDFgfNrxgCJuI-WVn-h1YT-N5sk9lcOqsSo32WexiVL5xByMFVrfI-DgSbRjaAn8kMxQNrC2bnw41fEMiiyTM4-se0zQZ6u09jI5O1GcuNvvfzPjFIRZsN9oLexAb19IGb6SHfJzCBxCcs4-IAgCWMMeSUWCSVydgvjIaieY3mgGj_LeZsy7GnzSjM37OPnEWFQe0cuqhBHiWCP9ZZeoA1ilLccUOMYYAxHRTejUK6ZrQNMAbVOqizWQEJ9eYnDn7G0nDAjAy5y77aKyGVfVY3uIrRTWnslZstRvFmn8TRKJ2VIOjDhxTcjLp6qq_T0O2TVnFd1kp8gInt1JKGNAZPKtIlfJI8s0qXhMxh_bYg_b39fUuwBnOUwGlq1wv3F72uCNvLQgCH1z0=s638-no">
    <meta name="msapplication-TileColor" content="#F44336">
 
-   <link rel="shortcut icon" href="images/tn-new.png">
+   <link rel="shortcut icon" href="https://lh3.googleusercontent.com/MQEfkFYKXNELVopX-wIfDwLqW2wQ1Z3ooBpP-D8cUNpopX4TWFnddzW0Asn_2gfNZVuobObeifbN4tgS9TuZx13vnXQxXvMcebxc4zOoGiikrWi6HcnzOea-YD4BNmJuN7CwCCzKy6Y_kQObpDPqHy5BMaA7vE1wvs7urK-IKSLAlaJokqwr5UvF-R8NHtHT9usNl6Ed3HBf_qeueLOjqUhiThUjLrtPWHFnDFgfNrxgCJuI-WVn-h1YT-N5sk9lcOqsSo32WexiVL5xByMFVrfI-DgSbRjaAn8kMxQNrC2bnw41fEMiiyTM4-se0zQZ6u09jI5O1GcuNvvfzPjFIRZsN9oLexAb19IGb6SHfJzCBxCcs4-IAgCWMMeSUWCSVydgvjIaieY3mgGj_LeZsy7GnzSjM37OPnEWFQe0cuqhBHiWCP9ZZeoA1ilLccUOMYYAxHRTejUK6ZrQNMAbVOqizWQEJ9eYnDn7G0nDAjAy5y77aKyGVfVY3uIrRTWnslZstRvFmn8TRKJ2VIOjDhxTcjLp6qq_T0O2TVnFd1kp8gInt1JKGNAZPKtIlfJI8s0qXhMxh_bYg_b39fUuwBnOUwGlq1wv3F72uCNvLQgCH1z0=s638-no">
 
    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
    <!--
@@ -158,26 +158,21 @@ href="{{ item.href }}"
 
 
 <footer class="page-footer red">
-  <div class="container">
-    <div class="row">
+  <div class="container row">
 
-      {% for widget in site.footer %}
-      <div class="{{ widget.size | default: "col l3 s12"}} white-text">
+      {% for widget in site.data.footer %}
+      <div class="col {{ widget.size | default: "s12 m6 l3"}} white-text">
         <h5 class="white-text">{{ widget.title }}</h5>
-        {{ widget.content }}
+        <p>{{ widget.text }}</p>
       </div>
       {% endfor %}
-
-    </div>
   </div>
-
 
   <div class="footer-copyright">
     <div class="container">
     {% include footer.html %}
     </div>
   </div>
-
 
 </footer>
 
