@@ -13,24 +13,18 @@ title: Archive
         {% if forloop.first %}
         <h2 id="{{ this_year }}" class="section scrollspy">{{this_year}}</h2>
         <h3 id="{{ this_year }}-{{ this_month }}" class="section scrollspy">{{ this_month }}</h3>
-        <ul>
         {% endif %}
 
         {% include post-loop.html %}
 
         {% if forloop.last %}
-        </ul>
         {% else %}
             {% if this_year != next_year %}
-            </ul>
             <h2 id="{{ next_year }}" class="section scrollspy">{{next_year}}</h2>
             <h3 id="{{ next_year }}-{{ next_month }}" class="section scrollspy">{{ next_month }}</h3>
-            <ul>
             {% else %}
                 {% if this_month != next_month %}
-                </ul>
                 <h3 id="{{ this_year }}-{{ next_month }}" class="section scrollspy">{{ next_month }}</h3>
-                <ul>
                 {% endif %}
             {% endif %}
         {% endif %}
