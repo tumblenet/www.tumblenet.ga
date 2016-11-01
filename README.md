@@ -3,17 +3,11 @@
 # Tumble Network Beta
 This is what we are planning to be the homepage
 
-## Features
-- [x] carousel
-- [x] Team page
-- [x] Jekyll
-- [x] Materialise
-- [x] List of all are websites (services)
-- [ ] Search page(google custem search engine)[gcse [
-- [ ] Blog
-  - [x] Tags 
-  - [x] Catgories
-  - [x] Archive
+
 
 Sugest more features (here)[features]
 Anybugs tellus (here)[issues]
+
+[gcse]:http://cse.google.co.uk
+[issues]:https://github.com/tumblenet/tumblenet-home-beta/issues
+
