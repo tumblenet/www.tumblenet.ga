@@ -1,5 +1,5 @@
 {
-  "language": "ruby",
+  "language": "jekyll",
   "group": "stable",
   "dist": "precise",
   "os": "linux"
