@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/tumblenet/tumblenet-home-beta.svg?branch=master)](https://travis-ci.org/tumblenet/tumblenet-home-beta)
 [![Gitter chat](https://badges.gitter.im/tumblenet/tumblenet-home-beta.png)](https://gitter.im/tumblenet/tumblenet-home-beta)
 [![Service status](https://assertible.com/apis/9be869bb-1242-4ee2-8f15-9b79b85d53cf/status?api_token=oxAHFbN0T45rbq2f)](https://assertible.com/dashboard#/services/9be869bb-1242-4ee2-8f15-9b79b85d53cf)
+[![codecov](https://codecov.io/gh/tumblenet/tumblenet-home-beta/branch/master/graph/badge.svg)](https://codecov.io/gh/tumblenet/tumblenet-home-beta)
+
 # Tumble Network Beta
 This is what we are planning to be the homepage.
 
