@@ -1,6 +1,6 @@
   {% assign youtube-ids = include.youtube-ids | split:"," %}
 <div class="row">
-  {% for youtube-id in include.youtube-ids | split:"," %}
+  {% for youtube-id in youtube-ids %}
     {% include youtube.html spacing="col s12 m6 l3" video-id=youtube-id %}
   {% endfor %}
 </div>
