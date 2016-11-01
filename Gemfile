@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'jekyll', '3.1.6'
+gem 'jekyll'
+gem "html-proofer"
 
 group :jekyll_plugins do
   gem 'github-pages'
