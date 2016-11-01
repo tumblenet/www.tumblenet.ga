@@ -1,9 +1,20 @@
 
 # Tumble Network Beta
-This is what we are planning to be the homepage
+This is what we are planning to be the homepage.
+
+
+
+
 
 
 to [@drbatmanwho] Please expand this README.md file.
+
+
+
+
+
+
+
 
 
 ## [Materialize](http://materializecss.com/), a CSS Framework based on material design
@@ -18,6 +29,11 @@ Chrome 35+, Firefox 31+, Safari 7+, IE 10+
 * [Submit bugs or anything unusual with the website][issues]
 * [Tell us your opinion and what you think][feedback]
 * [Todo list][todo]
+
+
+
+## License
+
 
 
 [issues]: https://github.com/tumblenet/tumblenet-home-beta/issues/new
