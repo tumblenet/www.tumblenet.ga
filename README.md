@@ -33,6 +33,10 @@ Chrome 35+, Firefox 31+, Safari 7+, IE 10+
 
 
 ## License
+The MIT License (MIT)
+Copyright (c) 2014 Materialize
+
+[Licence File][lisence]
 
 
 
@@ -40,3 +44,4 @@ Chrome 35+, Firefox 31+, Safari 7+, IE 10+
 [features]: #15
 [feedback]: #16
 [todo]: #17
+[lisence]: LICENSE.md
