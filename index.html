@@ -22,7 +22,7 @@ title: Home
   </ul>
 </div>
 
-  <h2>Services</h2>
+ <div class="container"> <h2>Services</h2>
   <div class="row ">
       {% for service in site.data.services limit: 8 %}
       {% include service-loop.html spacing="s12 m6 l3" %}
@@ -35,4 +35,4 @@ title: Home
     {% for post in site.posts limit: 8 %}
     {% include post-loop.html spacing="s12 m6 l3" %}
     {% endfor %}
-  </div>
+   </div></div>
