@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/tumblenet/tumblenet-home-beta.svg?branch=master)](https://travis-ci.org/tumblenet/tumblenet-home-beta)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/18cbb1b419b24ed2bb2ce9f3cad56d8d)](https://www.codacy.com/app/tumblegamer/tumblenet-home-beta?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tumblenet/tumblenet-home-beta&amp;utm_campaign=Badge_Grade)
-[![Gitter chat](https://badges.gitter.im/tumblenet/tumblenet-home-beta.png)](https://gitter.im/tumblenet/tumble-network-beta)
+[![Gitter chat](https://badges.gitter.im/tumblenet/tumblenet-home-beta.png)](https://gitter.im/tumblenet/tumblenet-home-beta)
+[![Service status](https://assertible.com/apis/9be869bb-1242-4ee2-8f15-9b79b85d53cf/status?api_token=oxAHFbN0T45rbq2f)](https://assertible.com/dashboard#/services/9be869bb-1242-4ee2-8f15-9b79b85d53cf)
 # Tumble Network Beta
 This is what we are planning to be the homepage.
 
