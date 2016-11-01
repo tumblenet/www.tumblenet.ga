@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/tumblenet/tumblenet-home-beta.svg?branch=master)](https://travis-ci.org/tumblenet/tumblenet-home-beta)
 
 # Tumble Network Beta
 This is what we are planning to be the homepage.
@@ -34,7 +35,6 @@ Chrome 35+, Firefox 31+, Safari 7+, IE 10+
 
 ## License
 The MIT License (MIT)
-
 Copyright (c) 2014 Materialize
 
 [Licence File][lisence]
