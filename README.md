@@ -1,7 +1,19 @@
-[![GitHub version](https://img.shields.io/github/release/Steam-Chat-Bot/node-steam-chat-bot.svg?label=ver)](https://github.com/Steam-Chat-Bot/node-steam-chat-bot/releases/latest)
-[![GitHub tag](https://img.shields.io/github/tag/Steam-Chat-Bot/node-steam-chat-bot.svg)](https://github.com/Steam-Chat-Bot/node-steam-chat-bot/tags/latest)
-[![node](https://img.shields.io/node/v/steam-chat-bot.svg)](https://npmjs.com/package/steam-chat-bot)
-[![Repo Size](https://reposs.herokuapp.com/?path=Steam-Chat-Bot/node-steam-chat-bot)]()
-[![License](https://img.shields.io/badge/license-MIT-44CC11.svg)](https://efreak.mit-license.org)
 [![Build Status](https://travis-ci.org/tumblenet/tumblenet-home-beta.svg?branch=master)](https://travis-ci.org/tumblenet/tumblenet-home-beta)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/18cbb1b419b24ed2bb2ce9f3cad56d8d)](https://www.codacy.com/app/tumblegamer/tumblenet-home-beta?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tumblenet/tumblenet-home-beta&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/18cbb1b419b24ed2bb2ce9f3cad56d8d)](https://www.codacy.com/app/tumblegamer/tumblenet-home-beta?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tumblenet/tumblenet-home-beta&amp;utm_campaign=Badge_Gradedsfdsfds
+# Tumble Network Beta
+This is what we are planning to be the homepage
+
+Features;
+- [x] carousel
+- [x] Team page
+- [x] Jekyll
+- [x] Materialise
+- [x] List of all are websites (services)
+- [ ] Search page(google custem search engine)[gcse]
+- [ ] Blog
+- - [ ] Tags 
+- - [ ] Catgories
+- - [ ] Archive
+
+Sugest more features (here)[features]
+Anybugs tellus here ()
