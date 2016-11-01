@@ -3,12 +3,11 @@
 # Tumble Network Beta
 This is what we are planning to be the homepage
 
-
 ## See also
-[Request Features][features]
-[Submit bugs or anything unusual with the website][issues]
-[Tell us your opinion and what you think][feedback]
-[Todo list][todo]
+* [Request Features][features]
+* [Submit bugs or anything unusual with the website][issues]
+* [Tell us your opinion and what you think][feedback]
+* [Todo list][todo]
 
 
 [issues]: https://github.com/tumblenet/tumblenet-home-beta/issues/new
