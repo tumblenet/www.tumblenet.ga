@@ -1,6 +1,6 @@
 (function() {
   (function($) {
-    return $.fn.imgPreload = function(options) {
+    function imgPreload(options) {
       var delay_completion, i, image_stack, placeholder_stack, replace, settings, spinner_stack, src, x, _i, _len;
       settings = {
         fake_delay: 10,
