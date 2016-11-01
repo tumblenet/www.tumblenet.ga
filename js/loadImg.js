@@ -5,7 +5,7 @@
       settings = {
         fake_delay: 10,
         animation_duration: 1000,
-        spinner_src: '/images/loading.gif'
+        spinner_src: 'spinner.gif'
       };
       if (options) {
         $.extend(settings, options);
@@ -32,7 +32,8 @@
         offset_left = $image.offset().left;
         $spinner_img = $('<img>');
         $placeholder = $('<img>').attr({
-          src: 'data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
+          src: 'data:image/gif;base64,R0lGODlhAQABA
+                IABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
         });
         $placeholder.attr({
           width: $image.attr('width')
