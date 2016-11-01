@@ -5,9 +5,10 @@ This is what we are planning to be the homepage
 
 
 
-Sugest more features (here)[features]
-Anybugs tellus (here)[issues]
+Sugest more features [here][features]
+Anybugs tellus [here][issues]
 
-[gcse]:http://cse.google.co.uk
-[issues]:https://github.com/tumblenet/tumblenet-home-beta/issues
+[gcse]: http://cse.google.co.uk
+[issues]: https://github.com/tumblenet/tumblenet-home-beta/issues
+[features]: 
 
