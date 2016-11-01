@@ -11,17 +11,13 @@ Features;
 - [x] List of all are websites (services)
 - [ ] Search page(google custem search engine)[gcse]
 - [ ] Blog
-- - [ ] Tags 
-- - [ ] Catgories
-- - [ ] Archive
+  - [ ] Tags 
+  - [ ] Catgories
+  - [ ] Archive
 
 
 test list:
-- hi
-- hi
-- hi
-  - hi
 
 
 Sugest more features (here)[features]
-Anybugs tellus here ()
+Anybugs tellus here (
