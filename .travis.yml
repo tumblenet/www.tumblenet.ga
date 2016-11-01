@@ -1,6 +1,3 @@
 {
-  "language": "jekyll",
-  "group": "stable",
-  "dist": "precise",
-  "os": "linux"
+  "language": "html"
 }
