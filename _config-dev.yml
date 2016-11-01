@@ -1,2 +1,2 @@
 url: http://localhost:4000
-command: jekyll serve -w --config _config.yml,_config-dev.yml
+command: bundle exec jekyll serve -w --config _config.yml,_config-dev.yml
