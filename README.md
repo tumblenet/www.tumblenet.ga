@@ -3,7 +3,7 @@
 This is what we are planning to be the homepage
 
 
-to @drbatmanwho: Please expand this README.md file.
+to [@drbatmanwho] Please expand this README.md file.
 
 
 ## [Materialize](http://materializecss.com/), a CSS Framework based on material design
