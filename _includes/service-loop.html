@@ -13,14 +13,14 @@
 
       <p>{{ service.text }}</p>
       </div>
-      {% if service.href %}
       <div class="card-action">
+        {% if service.href %}
         <a href="{{ service.href }}">View</a>
+      {% endif %}
         {% if service.links %}
-          <a href="{{ page.url }}#" class="activator">More...</a>
+          <a class="activator">More...</a>
         {% endif %}
       </div>
-      {% endif %}
 
       {% if service.links %}
       <div class="card-reveal">
