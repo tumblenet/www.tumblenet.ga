@@ -5,7 +5,7 @@
       settings = {
         fake_delay: 10,
         animation_duration: 1000,
-        spinner_src: 'images/loading.gif'
+        spinner_src: '/images/loading.gif'
       };
       if (options) {
         $.extend(settings, options);
