@@ -159,6 +159,7 @@ PLATFORMS
 
 DEPENDENCIES
   codecov
+  ffi
   github-pages
   html-proofer
   jekyll

@@ -5,6 +5,7 @@ gem "rake"
 gem 'jekyll'
 gem "html-proofer"
 gem 'codecov', :require => false, :group => :test
+gem 'ffi'
 
 group :jekyll_plugins do
   gem 'github-pages'
