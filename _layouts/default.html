@@ -125,7 +125,7 @@ href="{{ item.href }}"
           <a {% if item.type == "dropdown" %}
           class="dropdown-button" href="{{ page.url }}#" data-activates="dropdown{{ forloop.index }}"
           {% else %}
-          href="{{ item.href }}"{% if item.type == "button" %} class="btn red-lighten2 black-text"{% endif %}
+          href="{{ item.href }}"{% if item.type == "button" %} class="btn red lighten2 black-text"{% endif %}
           {% endif %}>
             {{ item.title }}
             {% if item.href == "/blog/" %}
