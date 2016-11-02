@@ -148,10 +148,13 @@ href="{{ item.href }}"
 
 
         <li {% if page.url contains item.href %}class="active"{% endif %}>
-          <a {% if item.dropdown %}
+           {% if item.type == "html" %}
+           {{ item.html }}
+           {% else %}
+          <a {% if item.type == "dropdown" %}
           class="dropdown-button" href="{{ page.url }}#" data-activates="mobile-dropdown{{ forloop.index }}"
           {% else %}
-          href="{{ item.href }}"
+          href="{{ item.href }}"{% if item.type == "button" %} class="btn red lighten2 black-text"{% endif %}
           {% endif %}>
             {{ item.title }}
             {% if item.href == "/blog/" %}
@@ -163,6 +166,7 @@ href="{{ item.href }}"
             <i class="material-icons right">arrow_drop_down</i>
             {% endif %}
           </a>
+           {% endif %}
         </li>
 
 
