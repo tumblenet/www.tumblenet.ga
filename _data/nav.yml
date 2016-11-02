@@ -1,3 +1,16 @@
+- type: html
+  html: <script>
+  (function() {
+    var cx = '013719652570820795841:4rvy0yyrmgw';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
 - title: About
   href: /about/
 - title: Team
@@ -6,6 +19,7 @@
   href: /videos/
 - title: Blog
   href: /blog/
+  type: dropdown
   dropdown:
   - title: Tags
     href: /blog/tags/
@@ -15,3 +29,5 @@
     href: /blog/archive/
 - title: Services
   href: /services/
+- title: test button
+  type: button
