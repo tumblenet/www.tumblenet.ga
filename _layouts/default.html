@@ -116,19 +116,11 @@ href="{{ item.href }}"
     <div class="nav-wrapper">
        <ul class="left">
          <li><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a></li>
+         <li><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">search</i></a></li>
        </ul>
+
           
-          
-    
-         <form>
-           <div class="input-field ">
-             <input id="search" type="search" required>
-             <label for="search"><i class="material-icons">search</i></label>
-             <i class="material-icons">close</i>
-           </div>
-         </form>
-          
-          <a id="logo-container" href="{{ site.url }}" class="brand-logo">
+          <a id="logo-container" href="{{ site.url }}" class="brand-logo col l3">
              {% if site.logo-url %} 
              <img src="{{ site.logo-url }}"> 
              {% else %}
@@ -136,6 +128,17 @@ href="{{ item.href }}"
              {% endif %}
           </a>
           
+                 
+          
+    
+         <form>
+           <div class="input-field col l3">
+             <input id="search" type="search" required>
+             <label for="search"><i class="material-icons">search</i></label>
+             <i class="material-icons">close</i>
+           </div>
+         </form>
+       
           <ul class="right hide-on-med-and-down">
            {% for item in site.data.nav %}
              
