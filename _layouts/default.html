@@ -114,8 +114,8 @@ href="{{ item.href }}"
 
   <nav class="red" role="navigation">
     <div class="nav-wrapper container row">
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-       <a id="logo-container" href="{{ site.url }}" class="brand-logo">
+      <a href="#" data-activates="nav-mobile" class="button-collapse col s1 m1"><i class="material-icons">menu</i></a>
+       <a id="logo-container" href="{{ site.url }}" class="brand-logo col s11 m6 l1">
           {% if site.logo-url %} 
           <img src="{{ site.logo-url }}"> 
           {% else %}
@@ -129,7 +129,7 @@ href="{{ item.href }}"
           <i class="material-icons">close</i>
         </div>
       </form>
-       <ul class="right hide-on-med-and-down">
+       <ul class="right hide-on-med-and-down col m6 l6">
         {% for item in site.data.nav %}
 
 
