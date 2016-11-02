@@ -114,7 +114,7 @@ href="{{ item.href }}"
 
   <nav class="red" role="navigation">
     <div class="nav-wrapper row">
-       <ul class="left">
+       <ul class="left col m2 l2">
          <li><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a></li>
          <li><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">search</i></a></li>
        </ul>
@@ -139,7 +139,7 @@ href="{{ item.href }}"
            </div>
          </form>
        
-          <ul class="right hide-on-med-and-down">
+          <ul class="right hide-on-med-and-down col m4 l4">
            {% for item in site.data.nav %}
              
            <li {% if page.url contains item.href %}class="active"{% endif %}>
