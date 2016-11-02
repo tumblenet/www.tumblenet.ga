@@ -25,5 +25,6 @@
     href: /blog/archive/
 - title: Services
   href: /services/
-- title: test button
+- title: Archive Us
   type: button
+  href: javascript:location.href='http://web.archive.org/save/'+document.location.href;
