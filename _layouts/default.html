@@ -115,7 +115,7 @@ href="{{ item.href }}"
   <nav class="red" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="{{ site.url }}" class="brand-logo">{% if site.logo-url %} <img src="{{ site.logo-url }}"> {% else %}{{ site.title }}{% endif %}</a>
       <form>
-        <div class="input-field">
+        <div class="input-field l3">
           <input id="search" type="search" required>
           <label for="search"><i class="material-icons">search</i></label>
           <i class="material-icons">close</i>
@@ -132,7 +132,7 @@ href="{{ item.href }}"
           <a {% if item.type == "dropdown" %}
           class="dropdown-button" href="{{ page.url }}#" data-activates="dropdown{{ forloop.index }}"
           {% else %}
-          href="{{ item.href }}"{% if item.type == "button" %} class="btn red lighten2 black-text"{% endif %}
+          href="{{ item.href }}"{% if item.type == "button" %} class="btn red lighten2 white-text"{% endif %}
           {% endif %}>
             {{ item.title }}
             {% if item.href == "/blog/" %}
@@ -161,7 +161,7 @@ href="{{ item.href }}"
           <a {% if item.type == "dropdown" %}
           class="dropdown-button" href="{{ page.url }}#" data-activates="mobile-dropdown{{ forloop.index }}"
           {% else %}
-          href="{{ item.href }}"{% if item.type == "button" %} class="btn red lighten2 black-text"{% endif %}
+          href="{{ item.href }}"{% if item.type == "button" %} class="btn red lighten2 white-text"{% endif %}
           {% endif %}>
             {{ item.title }}
             {% if item.href == "/blog/" %}
