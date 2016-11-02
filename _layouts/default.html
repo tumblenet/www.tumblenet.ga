@@ -122,7 +122,7 @@ href="{{ item.href }}"
           
           <a id="logo-container" href="{{ site.url }}" class="brand-logo col">
              {% if site.logo-url %} 
-             <img src="{{ site.logo-url }}"> 
+             <img src="{{ site.logo-url }}" class="col"> 
              {% else %}
              {{ site.title }}
              {% endif %}
@@ -132,7 +132,7 @@ href="{{ item.href }}"
           
     
          <form class="col hide-on-med-and-down">
-           <div class="input-field col l2">
+           <div class="input-field col l5">
              <input id="search" type="search" required>
              <label for="search"><i class="material-icons">search</i></label>
              <i class="material-icons">close</i>
