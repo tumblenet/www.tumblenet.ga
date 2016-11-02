@@ -114,13 +114,13 @@ href="{{ item.href }}"
 
   <nav class="red" role="navigation">
     <div class="nav-wrapper row">
-       <ul class="left col m2 l2">
+       <ul class="left col">
          <li><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a></li>
          <li><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">search</i></a></li>
        </ul>
 
           
-          <a id="logo-container" href="{{ site.url }}" class="brand-logo col l3">
+          <a id="logo-container" href="{{ site.url }}" class="brand-logo col">
              {% if site.logo-url %} 
              <img src="{{ site.logo-url }}"> 
              {% else %}
@@ -139,7 +139,7 @@ href="{{ item.href }}"
            </div>
          </form>
        
-          <ul class="right hide-on-med-and-down col m4 l4">
+          <ul class="right hide-on-med-and-down col">
            {% for item in site.data.nav %}
              
            <li {% if page.url contains item.href %}class="active"{% endif %}>
