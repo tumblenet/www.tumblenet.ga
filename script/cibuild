@@ -3,4 +3,4 @@ set -e # halt script on error
 
 bundle exec jekyll serve
 bundle exec htmlproofer ./_site
-curl -s https://codecov.io/bash
+bash <(curl -s https://codecov.io/bash)
