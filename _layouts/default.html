@@ -114,7 +114,14 @@ href="{{ item.href }}"
 
   <nav class="red" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="{{ site.url }}" class="brand-logo">{% if site.logo-url %} <img src="{{ site.logo-url }}"> {% else %}{{ site.title }}{% endif %}</a>
-      <ul class="right hide-on-med-and-down">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+       <ul class="right hide-on-med-and-down">
         {% for item in site.data.nav %}
 
 
