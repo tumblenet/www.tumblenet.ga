@@ -6,6 +6,7 @@
   href: /videos/
 - title: Blog
   href: /blog/
+  type: dropdown
   dropdown:
   - title: Tags
     href: /blog/tags/
@@ -15,3 +16,5 @@
     href: /blog/archive/
 - title: Services
   href: /services/
+- title: test button
+  type: button
