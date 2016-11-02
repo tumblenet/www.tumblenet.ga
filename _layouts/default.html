@@ -115,8 +115,8 @@ href="{{ item.href }}"
   <nav class="red" role="navigation">
     <div class="nav-wrapper row">
        <ul class="left col">
-         <li><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a></li>
-         <li><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">search</i></a></li>
+         <li><a href="javascript:void(0);" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a></li>
+         <li><a href="javascript:void(0);" data-activates="nav-mobile" class="button-collapse" onclick="toggle_visibility('mobile-search-bar');"><i class="material-icons">search</i></a></li>
        </ul>
 
           
@@ -201,9 +201,8 @@ href="{{ item.href }}"
       </div>
     </div>
   </nav>
-</div>
-   <nav class="red" role="navigation">
-    <div class="nav-wrapper pinned">
+   <nav class="red mobile-search-bar" role="navigation">
+    <div class="nav-wrapper">
       <form>
         <div class="input-field">
           <input id="search" type="search" required>
@@ -213,6 +212,8 @@ href="{{ item.href }}"
       </form>
     </div>
   </nav>
+</div>
+   
 
 {{ content }}
 
@@ -271,5 +272,16 @@ snowStorm.randomizeWind()
 
 {% endif %}
 <script id="dsq-count-scr" src="//{{ site.disqus-shortname }}.disqus.com/count.js" async></script>
+   <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
 </body>
 </html>
