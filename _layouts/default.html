@@ -159,8 +159,8 @@ href="{{ item.href }}"
                  
           
     
-         <form class="col m3 l5 hide-on-med-and-down right">
-           <div class="input-field" action="javascript:search('#search');">
+         <form class="col m3 l5 hide-on-med-and-down right" action="javascript:search('#search');">
+           <div class="input-field">
              <input id="search" type="search" required>
              <label for="search"><i class="material-icons">search</i></label>
              <i class="material-icons">close</i>
@@ -206,7 +206,7 @@ href="{{ item.href }}"
    <div class="nav-wrapper navbar-fixed mobile-search-bar hide-on-large-only hide">
    <nav class="red" role="navigation">
     <div class="nav-wrapper">
-      <form>
+      <form action="javascript:search('#search');">
         <div class="input-field">
           <input id="search" type="search" required>
           <label for="search"><i class="material-icons">search</i></label>
