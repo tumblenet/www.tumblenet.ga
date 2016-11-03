@@ -14,4 +14,4 @@ author: tumblegamer
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
+<gcse:search resultsUrl="/search/"></gcse:search>
