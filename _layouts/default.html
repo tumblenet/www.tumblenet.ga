@@ -116,30 +116,11 @@ href="{{ item.href }}"
     <div class="nav-wrapper row">
        <ul class="left col">
          <li><a href="javascript:void(0);" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a></li>
-         <li><a href="javascript:void(0);" onclick="toggle_visibility('mobile-search-bar');"><i class="material-icons">search</i></a></li>
        </ul>
 
-          
-          <a id="logo-container" href="{{ site.url }}" class="brand-logo col center">
-             {% if site.logo-url %} 
-             <img src="{{ site.logo-url }}"> 
-             {% else %}
-             {{ site.title }}
-             {% endif %}
-          </a>
-          
-                 
-          
-    
-         <form class="col hide-on-med-and-down left">
-           <div class="input-field l5">
-             <input id="search" type="search" required>
-             <label for="search"><i class="material-icons">search</i></label>
-             <i class="material-icons">close</i>
-           </div>
-         </form>
+
        
-          <ul class="right hide-on-med-and-down">
+          <ul class="left hide-on-med-and-down col">
            {% for item in site.data.nav %}
              
            <li {% if page.url contains item.href %}class="active"{% endif %}>
@@ -166,8 +147,23 @@ href="{{ item.href }}"
 
 
            {% endfor %}
-         `</ul>
+         </ul>
+
+          <a id="logo-container" href="{{ site.url }}" class="brand-logo center">
+             {% if site.logo-url %} 
+             <img src="{{ site.logo-url }}"> 
+             {% else %}
+             {{ site.title }}
+             {% endif %}
+          </a>
+                 
           
+    
+         {% include search.html class="col m3 l5 hide-on-med-and-down right" id="desktop-search" %}
+       
+       <ul class="hide-on-large-only right">
+         <li><a href="javascript:$('.mobile-search-bar').toggleClass('hide');"><i class="material-icons">search</i></a></li>
+       </ul>
           
          <ul id="nav-mobile" class="side-nav">
            {% for item in site.data.nav %}
@@ -202,16 +198,10 @@ href="{{ item.href }}"
     </div>
   </nav>
    </div>
-   <div class="nav-wrapper navbar-fixed  mobile-search-bar">
+   <div class="nav-wrapper navbar-fixed mobile-search-bar hide-on-large-only hide">
    <nav class="red" role="navigation">
     <div class="nav-wrapper">
-      <form>
-        <div class="input-field">
-          <input id="search" type="search" required>
-          <label for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-        </div>
-      </form>
+      {% include search.html id="mobile-search" %}
     </div>
   </nav>
 </div>
@@ -274,16 +264,10 @@ snowStorm.randomizeWind()
 
 {% endif %}
 <script id="dsq-count-scr" src="//{{ site.disqus-shortname }}.disqus.com/count.js" async></script>
-   <script type="text/javascript">
-<!--
-    function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
+<script type="text/javascript">
+    function search(id) {
+       window.location.href = "/search/?q=" + $(id).val();
     }
-//-->
 </script>
 </body>
 </html>
