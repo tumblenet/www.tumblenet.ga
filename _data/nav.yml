@@ -8,7 +8,6 @@
   href: /videos/
 - title: Blog
   href: /blog/
-- title: Stats
   dropdown:
   - title: Tags
     href: /blog/tags/
