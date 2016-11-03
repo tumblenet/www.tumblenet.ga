@@ -277,7 +277,9 @@ snowStorm.randomizeWind()
 <script id="dsq-count-scr" src="//{{ site.disqus-shortname }}.disqus.com/count.js" async></script>
 <script type="text/javascript">
     function search(id) {
-        return "search?q=" + $(id).val()
+       $(this).attr("action", function(i, origValue){
+        return "/search/?q=" + $(id).val();
+    });
     }
 </script>
 </body>
