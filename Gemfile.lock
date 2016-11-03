@@ -147,6 +147,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  ffi
   github-pages
   html-proofer
   jekyll
