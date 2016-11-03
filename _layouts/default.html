@@ -116,12 +116,11 @@ href="{{ item.href }}"
     <div class="nav-wrapper row">
        <ul class="left col">
          <li><a href="javascript:void(0);" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a></li>
-         <li><a href="javascript:void(0);" onclick="toggle_visibility('mobile-search-bar');"><i class="material-icons">search</i></a></li>
        </ul>
 
 
        
-          <ul class="right hide-on-med-and-down">
+          <ul class="left hide-on-med-and-down">
            {% for item in site.data.nav %}
              
            <li {% if page.url contains item.href %}class="active"{% endif %}>
@@ -162,13 +161,16 @@ href="{{ item.href }}"
                  
           
     
-         <form class="col hide-on-med-and-down left">
+         <form class="col hide-on-med-and-down right">
            <div class="input-field l5">
              <input id="search" type="search" required>
              <label for="search"><i class="material-icons">search</i></label>
              <i class="material-icons">close</i>
            </div>
          </form>
+       <ul class="tight col">
+         <li><a href="javascript:void(0);" onclick="toggle_visibility('mobile-search-bar');"><i class="material-icons">search</i></a></li>
+       </ul>
           
          <ul id="nav-mobile" class="side-nav">
            {% for item in site.data.nav %}
