@@ -4,6 +4,7 @@ layout: default-breadcrumbs
 <div class="row container">
   <div class="col s12">
   {% assign author = site.team | where:"author-id", page.author | first %}
+    <a href="{{site.github.repository_url}}/blob/gh-pages/{{page.path}}">Edit this page</a>
     <div class="card">
       {% if page.image_url %}
       <div class="card-image">
