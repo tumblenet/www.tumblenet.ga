@@ -14,4 +14,5 @@ author: tumblegamer
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search resultsUrl="/search/"></gcse:search>
+<gcse:searchbox enableHistory="true" autoCompleteMaxCompletions="5" autoCompleteMatchType='any' resultsUrl="/search/">
+<gcse:searchresults refinementStyle="link">
