@@ -1,3 +1,8 @@
+---
+layout: page
+title: Search Results
+author: tumblegamer
+---
 <script>
   (function() {
     var cx = '013719652570820795841:4rvy0yyrmgw';
