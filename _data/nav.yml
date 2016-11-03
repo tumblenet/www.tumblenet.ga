@@ -1,7 +1,9 @@
 - title: About
   href: /about/
-- title: Team
-  href: /team/
+  type: dropdown
+  dropdown:
+  - title: Team
+    href: /team/
 - title: Videos
   href: /videos/
 - title: Blog
