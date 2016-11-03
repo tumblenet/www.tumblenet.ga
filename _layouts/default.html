@@ -119,25 +119,7 @@ href="{{ item.href }}"
          <li><a href="javascript:void(0);" onclick="toggle_visibility('mobile-search-bar');"><i class="material-icons">search</i></a></li>
        </ul>
 
-          
-          <a id="logo-container" href="{{ site.url }}" class="brand-logo col center">
-             {% if site.logo-url %} 
-             <img src="{{ site.logo-url }}"> 
-             {% else %}
-             {{ site.title }}
-             {% endif %}
-          </a>
-          
-                 
-          
-    
-         <form class="col hide-on-med-and-down left">
-           <div class="input-field l5">
-             <input id="search" type="search" required>
-             <label for="search"><i class="material-icons">search</i></label>
-             <i class="material-icons">close</i>
-           </div>
-         </form>
+
        
           <ul class="right hide-on-med-and-down">
            {% for item in site.data.nav %}
@@ -168,6 +150,25 @@ href="{{ item.href }}"
            {% endfor %}
          `</ul>
           
+                 
+          <a id="logo-container" href="{{ site.url }}" class="brand-logo col center">
+             {% if site.logo-url %} 
+             <img src="{{ site.logo-url }}"> 
+             {% else %}
+             {{ site.title }}
+             {% endif %}
+          </a>
+          
+                 
+          
+    
+         <form class="col hide-on-med-and-down left">
+           <div class="input-field l5">
+             <input id="search" type="search" required>
+             <label for="search"><i class="material-icons">search</i></label>
+             <i class="material-icons">close</i>
+           </div>
+         </form>
           
          <ul id="nav-mobile" class="side-nav">
            {% for item in site.data.nav %}
