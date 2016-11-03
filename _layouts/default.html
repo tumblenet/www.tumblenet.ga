@@ -120,7 +120,7 @@ href="{{ item.href }}"
 
 
        
-          <ul class="left hide-on-med-and-down">
+          <ul class="left hide-on-med-and-down truncate">
            {% for item in site.data.nav %}
              
            <li {% if page.url contains item.href %}class="active"{% endif %}>
@@ -205,7 +205,7 @@ href="{{ item.href }}"
     </div>
   </nav>
    </div>
-   <div class="nav-wrapper navbar-fixed  mobile-search-bar">
+   <div class="nav-wrapper navbar-fixed  mobile-search-bar .hide-on-large-only">
    <nav class="red" role="navigation">
     <div class="nav-wrapper">
       <form>
