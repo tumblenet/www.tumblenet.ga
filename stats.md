@@ -1,1 +1,1 @@
-This is where interesting stats for both og our channels will be posted - most popular videos, subscriber count, anything you could want to know about the channels that make Tumble Network what it is.
+This is where interesting stats for both of our channels will be posted - most popular videos, subscriber count, anything you could want to know about the channels that make Tumble Network what it is.
