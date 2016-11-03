@@ -149,26 +149,26 @@ href="{{ item.href }}"
            {% endfor %}
          </ul>
           
-                 
-          <a id="logo-container" href="{{ site.url }}" class="brand-logo col center">
+         <div class="center">
+          <a id="logo-container" href="{{ site.url }}" class="brand-logo">
              {% if site.logo-url %} 
              <img src="{{ site.logo-url }}"> 
              {% else %}
              {{ site.title }}
              {% endif %}
           </a>
-          
+       </div>
                  
           
     
-         <form class="col m3 l5 hide-on-med-and-down">
+         <form class="col m3 l5 hide-on-med-and-down right">
            <div class="input-field">
              <input id="search" type="search" required>
              <label for="search"><i class="material-icons">search</i></label>
              <i class="material-icons">close</i>
            </div>
          </form>
-       <ul class="col hide-on-large-only right">
+       <ul class="hide-on-large-only right">
          <li><a href="javascript:void(0);" onclick="toggle_visibility('mobile-search-bar');"><i class="material-icons">search</i></a></li>
        </ul>
           
@@ -205,7 +205,7 @@ href="{{ item.href }}"
     </div>
   </nav>
    </div>
-   <div class="nav-wrapper navbar-fixed  mobile-search-bar hide-on-large-only">
+   <div class="nav-wrapper navbar-fixed mobile-search-bar hide-on-large-only">
    <nav class="red" role="navigation">
     <div class="nav-wrapper">
       <form>
