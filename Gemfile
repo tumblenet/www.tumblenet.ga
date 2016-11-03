@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 #ruby ENV['CUSTOM_RUBY_VERSION'] || '2.3.0'
 
+gem 'rake'
 gem 'jekyll'
 gem 'codecov', :require => false, :group => :test
 
