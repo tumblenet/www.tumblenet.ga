@@ -118,11 +118,10 @@ href="{{ item.href }}"
          <li><a href="javascript:void(0);" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a></li>
        </ul>
 
-
-       
+       {% unless site.mobile-nav-on-desktop %}
           <ul class="left hide-on-med-and-down col">
            {% for item in site.data.nav %}
-             
+
            <li {% if page.url contains item.href %}class="active"{% endif %}>
               {% if item.type == "html" %}
               {{ item.html }}
@@ -148,23 +147,25 @@ href="{{ item.href }}"
 
            {% endfor %}
          </ul>
+         {% endunless %}
 
           <a id="logo-container" href="{{ site.url }}" class="brand-logo center">
-             {% if site.logo-url %} 
-             <img src="{{ site.logo-url }}"> 
+             {% if site.logo-url %}
+             <img src="{{ site.logo-url }}">
              {% else %}
              {{ site.title }}
              {% endif %}
           </a>
-                 
-          
-    
-         {% include search.html class="col m3 l5 hide-on-med-and-down right" id="desktop-search" %}
-       
-       <ul class="hide-on-large-only right">
+
+
+          {% unless site.mobile-nav-on-desktop %}
+          {% include search.html class="col m3 l5 hide-on-med-and-down right" id="desktop-search" %}
+          {% endunless %}
+
+       <ul class="{% unless site.mobile-nav-on-desktop %}hide-on-large-only{% endunless %} right">
          <li><a href="javascript:$('.mobile-search-bar').toggleClass('hide');"><i class="material-icons">search</i></a></li>
        </ul>
-          
+
          <ul id="nav-mobile" class="side-nav">
            {% for item in site.data.nav %}
 
@@ -198,14 +199,14 @@ href="{{ item.href }}"
     </div>
   </nav>
    </div>
-   <div class="nav-wrapper navbar-fixed mobile-search-bar hide-on-large-only hide">
+   <div class="nav-wrapper navbar-fixed mobile-search-bar {% unless site.mobile-nav-on-desktop %}hide-on-large-only{% endunless %} hide">
    <nav class="red" role="navigation">
     <div class="nav-wrapper">
       {% include search.html id="mobile-search" %}
     </div>
   </nav>
 </div>
-   
+
 
 {{ content }}
 
