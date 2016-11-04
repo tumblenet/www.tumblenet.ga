@@ -5,6 +5,7 @@ permalink: /blog/:categories/:year/:month/:day/:title/
 disqus-shortname: tumble-network-beta
 excerpt_separator: <!--more-->
 exclude: [vendor]
+mobile-nav-on-desktop: true
 collections:
   team:
     output: true
