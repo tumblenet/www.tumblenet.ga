@@ -114,7 +114,7 @@ href="{{ item.href }}"
 
   <nav class="red" role="navigation">
     <div class="nav-wrapper row">
-       <ul class="left col">
+       <ul class="{% unless site.mobile-nav-on-desktop %}hide-on-large-only{% endunless %} left col">
          <li><a href="javascript:void(0);" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a></li>
        </ul>
 
