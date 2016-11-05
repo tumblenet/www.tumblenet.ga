@@ -9,7 +9,7 @@
   - title: DBW Blog
     href: http://doctorbatmanwho.blog.tumblenet.tk
 - title: URL-Shortener
-  image-url:  /images/services/short-url.png
+  image-url: /images/services/short-url.png
   href: http://short-url.tumblenet.tk
   text: Make your long urls Short
 - title: TumbleNet Downloads
@@ -20,9 +20,10 @@
   image-url: /images/services/github.png
   href: http://github.tumblenet.tk
 - title: TumbleNet Help
+  image-url: /images/services/help.png
   text: Need any help?
   href: http://help.tumblenet.tk
 - title: TumbleNet Live
-  image-url:  /images/services/live.png
+  image-url: /images/services/live.png
   text: See us Live
   href: http://live.tumblenet.tk
