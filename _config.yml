@@ -1,6 +1,6 @@
 title: Tumble Network
 url: http://beta.tumblenet.tk
-logo-url: images/logo.png
+logo-url: /images/logo.png
 permalink: /blog/:categories/:year/:month/:day/:title/
 disqus-shortname: tumble-network-beta
 excerpt_separator: <!--more-->
