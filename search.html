@@ -7,8 +7,34 @@ layout: search
   <input type="submit" value="search">
 </form>
 
-<ul id="search-results"></ul>
+<div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">This Website</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Tumble Network</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12">
+      <ul id="search-results"></ul>
+    </div>
+    <div id="test2" class="col s12">
+      <gcse:searchbox-only resultsUrl="{{site-url}}search/tumblenet/"></gcse:searchbox-only>
+      <gcse:searchresults-only></gcse:searchresults-only>
+    </div>
+  </div>
 
+
+<script>
+  (function() {
+    var cx = '013719652570820795841:4rvy0yyrmgw';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 <script>
   window.store = {
     {% for post in site.posts %}
