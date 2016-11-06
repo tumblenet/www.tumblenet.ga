@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Search Results
+title: Search all of TumbleNet
 author: tumblegamer
 ---
 <script>
@@ -14,5 +14,5 @@ author: tumblegamer
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:searchbox-only resultsUrl="{{site-url}}search/"></gcse:searchbox-only>
+<gcse:searchbox-only resultsUrl="{{site-url}}search/tumblenet/"></gcse:searchbox-only>
 <gcse:searchresults-only></gcse:searchresults-only>
