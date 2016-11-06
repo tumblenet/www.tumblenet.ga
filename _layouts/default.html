@@ -43,8 +43,8 @@ Current date: {{ site.time | date_to_string }}
 
 <!-- CSS  -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
 
 <!--PRELOADER-->
@@ -52,7 +52,7 @@ Current date: {{ site.time | date_to_string }}
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
-<script type='text/javascript' src='js/loadImg.js'></script>
+<script type='text/javascript' src='/js/loadImg.js'></script>
 <script type='text/javascript'>
     $(function(){
         $('img').imgPreload()
@@ -233,8 +233,8 @@ href="{{ item.href }}"
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer>
   {lang: 'en-GB'}
@@ -246,7 +246,7 @@ href="{{ item.href }}"
 {% capture current_date %}{{ site.time | date: "%-d" }}{% endcapture %}
 {% capture days_until_xmas %}{{ 30 | minus: current_date }}{% endcapture %}
 <!-- required snowstorm JS, default behaviour -->
-<script src="js/snowstorm.js"></script>
+<script src="/js/snowstorm.js"></script>
 
 <!-- now, we'll customize the snowStorm object -->
 <script>
