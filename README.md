@@ -1,3 +1,6 @@
+<!-- background: #fff4e3 -->
+![alt tag](images/logo.png)
+# Tumble Network Website Beta
 [![Build Status](https://travis-ci.org/tumblenet/tumblenet-home-beta.svg?branch=master)](https://travis-ci.org/tumblenet/tumblenet-home-beta)
 [![Gitter chat](https://badges.gitter.im/tumblenet/tumblenet-home-beta.png)](https://gitter.im/tumblenet/tumblenet-home-beta)
 [![Service status](https://assertible.com/apis/9be869bb-1242-4ee2-8f15-9b79b85d53cf/status?api_token=oxAHFbN0T45rbq2f)](https://assertible.com/dashboard#/services/9be869bb-1242-4ee2-8f15-9b79b85d53cf)
@@ -5,9 +8,6 @@
 [![Code Climate](https://codeclimate.com/github/tumblenet/tumblenet-home-beta/badges/gpa.svg)](https://codeclimate.com/github/tumblenet/tumblenet-home-beta)
 [![Test Coverage](https://codeclimate.com/github/tumblenet/tumblenet-home-beta/badges/coverage.svg)](https://codeclimate.com/github/tumblenet/tumblenet-home-beta/coverage)
 [![Issue Count](https://codeclimate.com/github/tumblenet/tumblenet-home-beta/badges/issue_count.svg)](https://codeclimate.com/github/tumblenet/tumblenet-home-beta)
-
-![alt tag](images/logo.png)
-# Tumble Network Website Beta
 
 TODO: Write a project description
 
