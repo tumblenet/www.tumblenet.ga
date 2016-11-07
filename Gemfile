@@ -1,27 +1,27 @@
-source "http://rubygems.org"
-#ruby ENV['CUSTOM_RUBY_VERSION'] || '2.3.0'
+source "https://rubygems.org"
+ruby RUBY_VERSION
 
-gem 'jekyll'
-gem 'html-proofer'
-gem 'ffi'
+# Hello! This is where you manage which Jekyll version is used to run.
+# When you want to use a different version, change it below, save the
+# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+#
+#     bundle exec jekyll serve
+#
+# This will help ensure the proper Jekyll version is running.
+# Happy Jekylling!
+# gem "jekyll", "3.3.0"
 
+# This is the default theme for new Jekyll sites. You may change this to anything you like.
+# gem "minima", "~> 2.0"
 
-group :development do
-  gem 'mocha'
-  gem 'bacon'
-  gem 'mocha-on-bacon'
-  gem 'prettybacon'
-  gem 'rake'
+# This will check your compiled HTML.
+gem "html-proofer"
 
-  gem 'codeclimate-test-reporter', :require => nil
-  gem 'simplecov'
-  gem 'rubocop'
-end
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+gem "github-pages", group: :jekyll_plugins
 
-group :debugging do
-  gem 'kicker'
-end
-
-group :jekyll_plugins do
-  gem 'github-pages'
-end
+# If you have any plugins, put them here!
+# group :jekyll_plugins do
+#    gem "jekyll-feed", "~> 0.6"
+# end
