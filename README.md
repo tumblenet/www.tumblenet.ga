@@ -6,6 +6,7 @@
 [![Test Coverage](https://codeclimate.com/github/tumblenet/tumblenet-home-beta/badges/coverage.svg)](https://codeclimate.com/github/tumblenet/tumblenet-home-beta/coverage)
 [![Issue Count](https://codeclimate.com/github/tumblenet/tumblenet-home-beta/badges/issue_count.svg)](https://codeclimate.com/github/tumblenet/tumblenet-home-beta)
 
+![alt tag](/images/logog.png
 # Tumble Network Website Beta
 
 TODO: Write a project description
