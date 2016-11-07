@@ -1,4 +1,4 @@
-<!-- background: #fff4e3 -->
+<!-- background: #000000 -->
 ![alt tag](images/logo.png)
 # Tumble Network Website Beta
 [![Build Status](https://travis-ci.org/tumblenet/tumblenet-home-beta.svg?branch=master)](https://travis-ci.org/tumblenet/tumblenet-home-beta)
