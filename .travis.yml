@@ -1,26 +1,25 @@
-branches:
-  only:
-    - master
-
 language: ruby
-cache: bundler
 rvm:
-  # The latest ruby version
-  - 2.3
-  # OS X 10.9.5-10.10.0 (2.0.0-p481)
-  - 2.0.0-p481
-  # OS X 10.9.3-10.9.4
-  - 2.0.0-p451
-  # OS X 10.9.0-10.9.2
-  # TODO currently unavailable: https://github.com/travis-ci/travis-ci/issues/2918
-  # - 2.0.0-p247
-
-
+- 2.1
 
 before_script:
- - bundle exec jekyll build
- - bundle exec htmlproofer ./_site
+ - chmod +x ./script/cibuild # or do this locally and commit
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-script: ./script/cibuild
+# script: ./script/cibuild
+script:
+  - gem env
+  - bundle exec jekyll build
+#  - bundle exec htmlproofer ./_site
+
+# branch whitelist, only for GitHub Pages
+branches:
+  only:
+  - master
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+sudo: false # route your build to the container-based infrastructure for a faster build
