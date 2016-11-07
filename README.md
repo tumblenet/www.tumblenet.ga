@@ -1,5 +1,4 @@
-<!-- background: #000000 -->
-![alt tag](images/logo.png)
+![alt tag](http://search.tumblenet.tk/img/TumbleNet.png)
 # Tumble Network Website Beta
 [![Build Status](https://travis-ci.org/tumblenet/tumblenet-home-beta.svg?branch=master)](https://travis-ci.org/tumblenet/tumblenet-home-beta)
 [![Gitter chat](https://badges.gitter.im/tumblenet/tumblenet-home-beta.png)](https://gitter.im/tumblenet/tumblenet-home-beta)
