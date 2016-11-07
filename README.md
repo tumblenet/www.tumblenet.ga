@@ -61,7 +61,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 See also the list of [contributors](https://github.com/tumblenet/tumblenet-home-beta/contributors) who participated in this project.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE] file for details
 
 ## Acknowledgments
 * Hat tip to anyone who's code was used
@@ -72,7 +72,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [features]: #15
 [feedback]: #16
 [todo]: #17
-[lisence]: LICENSE.md
+[lisence]: LICENSE
 [jekyll-install]: http://jekyllrb.com/docs/installation/
 [atom-website]: http://atom.io
 [travis]: https://travis-ci.org/tumblenet/tumblenet-home-beta
