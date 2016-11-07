@@ -61,7 +61,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 See also the list of [contributors](https://github.com/tumblenet/tumblenet-home-beta/contributors) who participated in this project.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE] file for details
+This project is licensed under the MIT License - see the [LICENSE][lisense] file for details
 
 ## Acknowledgments
 * Hat tip to anyone who's code was used
