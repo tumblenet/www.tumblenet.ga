@@ -1,25 +1,44 @@
 language: ruby
 rvm:
-- 2.1
+- 2.2.5
+
+install:
+  # Bundler downgrade should be removed when the issue is fixed upstream
+ # - gem uninstall bundler -x
+ # - gem install bundler -v "=1.10.6"
+#  - gem install github-pages -v "104"
+#  - gem install rake
+#  - gem install html-proofer
+#  - gem install minima -v "~> 2.0"
+  - bundle install
+#  - git init
+  - echo "${EMAIL}"
+  - git config user.email "${EMAIL}"
+  - git config user.name "Travis CI"
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - cat .git/config
+  - git add .
+  - git commit -m "Travis CI"
+  - git push origin ${TRAVIS_BRANCH}
+
 
 before_script:
  - chmod +x ./script/cibuild # or do this locally and commit
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-# script: ./script/cibuild
-script:
-  - gem env
-  - bundle exec jekyll build
-#  - bundle exec htmlproofer ./_site
+script: ./script/cibuild
 
 # branch whitelist, only for GitHub Pages
-branches:
-  only:
-  - master
+#branches:
+#  only:
+#  - gh-pages     # test the gh-pages branch
+#  - /pages-(.*)/ # test every branch which starts with "pages-"
 
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  - EMAIL=noreply@tumblenet.tk
 
 sudo: false # route your build to the container-based infrastructure for a faster build
