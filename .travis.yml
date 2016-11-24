@@ -10,17 +10,17 @@ install:
 #  - gem install rake
 #  - gem install html-proofer
 #  - gem install minima -v "~> 2.0"
-  - bundle install
+#  - bundle install
 #  - git init
-  - echo "${EMAIL}"
-  - git config user.email "${EMAIL}"
-  - git config user.name "Travis CI"
-  - git config credential.helper "store --file=.git/credentials"
-  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-  - cat .git/config
-  - git add .
-  - git commit -m "Travis CI"
-  - git push origin ${TRAVIS_BRANCH}
+#  - echo "${EMAIL}"
+#  - git config user.email "${EMAIL}"
+#  - git config user.name "Travis CI"
+#  - git config credential.helper "store --file=.git/credentials"
+#  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+#  - cat .git/config
+#  - git add .
+#  - git commit -m "Travis CI"
+#  - git push origin ${TRAVIS_BRANCH}
 
 
 before_script:
