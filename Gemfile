@@ -24,6 +24,6 @@ gem "github-pages", group: :jekyll_plugins
 # end
 
 group :test do
-#  gem 'rake'
+  gem 'rake'
   gem 'html-proofer'
 end
