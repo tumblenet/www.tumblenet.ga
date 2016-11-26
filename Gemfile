@@ -19,6 +19,5 @@ gem 'github-pages', '104', group: :jekyll_plugins
 
 
 group :test do
-  gem 'rake'
   gem 'html-proofer'
 end

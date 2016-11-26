@@ -128,7 +128,6 @@ GEM
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (1.5.3)
-    rake (11.3.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -154,7 +153,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages (= 104)
   html-proofer
-  rake
 
 RUBY VERSION
    ruby 2.3.0p0
