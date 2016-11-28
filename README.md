@@ -77,3 +77,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [atom-website]: http://atom.io
 [travis]: https://travis-ci.org/tumblenet/tumblenet-home-beta
 [gh-desktop]: https://desktop.github.com/
+
+Thank you for reading.
