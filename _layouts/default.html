@@ -241,17 +241,12 @@ href="{{ item.href }}"
 </script>
 
 {% comment %} START OF CHRISTMAS SNOW {% endcomment %}
-{% capture current_month %}{{ site.time | date: "%m" }}{% endcapture %}
-{% capture current_month %}{{ site.time | date: "%m" }}{% endcapture %}
-{% if current_month == "12" %}
-{% capture current_date %}{{ site.time | date: "%-d" }}{% endcapture %}
-{% capture days_until_xmas %}{{ 30 | minus: current_date }}{% endcapture %}
 <!-- required snowstorm JS, default behaviour -->
 <script src="/js/snowstorm.js"></script>
 
 <!-- now, we'll customize the snowStorm object -->
 <script>
-{% unless current_date > "25" %}{% comment %} Check if its before christmass {% endcomment %}
+if (date.getMonth() == 11) {
 // Materialize.toast(message, displayLength, className, completeCallback);
 function getTimeRemaining(endtime){
   var t = Date.parse(endtime) - Date.parse(new Date());
@@ -273,13 +268,12 @@ Materialize.toast(getTimeRemaining(end).days + " days until christmas.", 4000)
                                                                               
 //say amount of days till christams
   //Materialize.toast(showRemaining, 4000) // 4000 is the duration of the toast
-    
-{% endunless %}
 
 //CHRISTMAS SNOW
 snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
 snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 snowStorm.randomizeWind()
+   }
 </script>
 
 {% endif %}
