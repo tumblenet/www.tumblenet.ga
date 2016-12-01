@@ -246,7 +246,7 @@ href="{{ item.href }}"
 
 <!-- now, we'll customize the snowStorm object -->
 <script>
-if (date.getMonth() == 11) {
+if (new Date().getMonth() == 11) {
 // Materialize.toast(message, displayLength, className, completeCallback);
 function getTimeRemaining(endtime){
   var t = Date.parse(endtime) - Date.parse(new Date());
