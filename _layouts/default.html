@@ -276,12 +276,13 @@ var end = new Date('25/12/{{ site.time | date: "%y" }} 10:1 AM');
         var seconds = Math.floor((distance % _minute) / _second);
 
         document.getElementById('countdown').innerHTML = days + 'days ';
-       Materialize.toast(days + ' days intil Christams', 4000)
+       Materialize.toast(days + ' days intil Christams', 4000);
     }
 
     //timer = setInterval(showRemaining, 1000);
 //say amount of days till christams
   //Materialize.toast(showRemaining, 4000) // 4000 is the duration of the toast
+    showRemaining();
 {% endunless %}
 
 //CHRISTMAS SNOW
