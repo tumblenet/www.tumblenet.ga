@@ -274,7 +274,7 @@ var end = new Date('25/12/{{ site.time | date: "%Y" }} 10:10 AM');
         var hours = Math.floor((distance % _day) / _hour);
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
-       Console.log(days);
+        console.log(days);
         document.getElementById('countdown').innerHTML = days + 'days ';
         Materialize.toast(days, 4000);
     }
