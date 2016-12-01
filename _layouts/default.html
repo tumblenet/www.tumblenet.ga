@@ -274,15 +274,14 @@ var end = new Date('25/12/{{ site.time | date: "%Y" }} 10:1 AM');
         var hours = Math.floor((distance % _day) / _hour);
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
-
+       Console.log(days);
         document.getElementById('countdown').innerHTML = days + 'days ';
-       Materialize.toast(days + ' days intil Christams', 4000)
-       return days;
+        Materialize.toast(days, 4000);
     }
 
-    timer = setInterval(showRemaining, 1000)
+    timer = setInterval(showRemaining, 1000);
 //say amount of days till christams
-  Materialize.toast(showRemaining, 4000) // 4000 is the duration of the toast
+  //Materialize.toast(showRemaining, 4000) // 4000 is the duration of the toast
     
 {% endunless %}
 
