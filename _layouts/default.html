@@ -253,7 +253,7 @@ href="{{ item.href }}"
 <script>
 {% unless current_date > "25" %}{% comment %} Check if its before christmass {% endcomment %}
 // Materialize.toast(message, displayLength, className, completeCallback);
-var end = new Date('25/12/{{ site.time | date: "%y" }} 10:1 AM');
+var end = new Date('25/12/{{ site.time | date: "%Y" }} 10:1 AM');
 
     var _second = 1000;
     var _minute = _second * 60;
