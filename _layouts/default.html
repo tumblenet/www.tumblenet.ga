@@ -253,32 +253,24 @@ href="{{ item.href }}"
 <script>
 {% unless current_date > "25" %}{% comment %} Check if its before christmass {% endcomment %}
 // Materialize.toast(message, displayLength, className, completeCallback);
+function getTimeRemaining(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
 var end = new Date('25/12/{{ site.time | date: "%Y" }} 10:10 AM');
-
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-    var timer;
-
-    function showRemaining() {
-        var now = new Date();
-        var distance = end - now;
-        if (distance < 0) {
-
-            clearInterval(timer);
-
-            return;
-        }
-        var days = Math.floor(distance / _day);
-        var hours = Math.floor((distance % _day) / _hour);
-        var minutes = Math.floor((distance % _hour) / _minute);
-        var seconds = Math.floor((distance % _minute) / _second);
-        console.log(days);
-        document.getElementById('countdown').innerHTML = days + 'days ';
-        Materialize.toast(days, 4000);
-    }
-
+Materialize.toast(getTimeRemaining(end) + "days until christmas.",4000)
+                                                                              
     timer = setInterval(showRemaining, 1000);
 //say amount of days till christams
   //Materialize.toast(showRemaining, 4000) // 4000 is the duration of the toast
