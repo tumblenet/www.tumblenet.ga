@@ -239,8 +239,8 @@ href="{{ item.href }}"
 <script src="https://apis.google.com/js/platform.js" async defer>
   {lang: 'en-GB'}
 </script>
-
-{% comment %} START OF CHRISTMAS SNOW {% endcomment %}
+{% comment %}
+{% comment %} START OF CHRISTMAS SNOW {% endcomment %}{% comment %}
 <!-- required snowstorm JS, default behaviour -->
 <script src="/js/snowstorm.js"></script>
 
@@ -262,7 +262,7 @@ function getTimeRemaining(endtime) {
     'seconds': seconds
   };
 }
-var end = 'Decemer 25 {{ site.time | date: "%Y" }}';
+var end = 'Decemer 25' + new Date().getYear();
 Materialize.toast(getTimeRemaining(end).days + " days until christmas.", 4000)
                                                                               
 //say amount of days till christams
@@ -281,5 +281,6 @@ snowStorm.randomizeWind()
        window.location.href = "/search/?q=" + $(id).val();
     }
 </script>
+   {% endcomment %}
 </body>
 </html>
