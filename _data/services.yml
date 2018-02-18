@@ -9,7 +9,6 @@
   - title: DBW Blog
     href: http://doctorbatmanwho.blog.tumblenet.ga
 - title: Wiki
-  image-url: /images/services/wiki.png
   href: http://wiki.tumblenet.ga
   text: Learn about the Tumble Network
 - title: TumbleNet Downloads
@@ -27,3 +26,9 @@
   image-url: /images/services/live.png
   text: See us Live
   href: http://live.tumblenet.ga
+  - title: TumbleNet Timeline
+  text: The History
+  href: http://timeline.tumblenet.ga
+    - title: TumbleNet Browse
+  text: The old browser
+  href: https://github.com/tumblenet/Tumble-NetBrowse
