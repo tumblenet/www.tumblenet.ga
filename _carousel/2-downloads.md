@@ -6,5 +6,5 @@ color: black-text
 button:
   text: Lets Go
   color: amber text-white
-  href: http://downloads.tumblenet.tk
+  href: http://downloads.tumblenet.ga
 ---
