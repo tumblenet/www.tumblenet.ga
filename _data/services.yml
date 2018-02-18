@@ -3,27 +3,27 @@
   text: Blog
   links:
   - title: Blog Home
-    href: http://blog.tumblenet.tk
+    href: http://blog.tumblenet.ga
   - title: TumbleGamer Blog
-    href: http://tumblegamer.blog.tumblenet.tk
+    href: http://tumblegamer.blog.tumblenet.ga
   - title: DBW Blog
-    href: http://doctorbatmanwho.blog.tumblenet.tk
+    href: http://doctorbatmanwho.blog.tumblenet.ga
 - title: URL-Shortener
   image-url: /images/services/short-url.png
-  href: http://short-url.tumblenet.tk
+  href: http://short-url.tumblenet.ga
   text: Make your long urls Short
 - title: TumbleNet Downloads
-  href: http://downloads.tumblenet.tk
+  href: http://downloads.tumblenet.ga
   text: Download... Stuff
 - title: TumbleNet GitHub
   text: See our current projects
   image-url: /images/services/github.png
-  href: http://github.tumblenet.tk
+  href: http://github.tumblenet.ga
 - title: TumbleNet Help
   image-url: /images/services/help.png
   text: Need any help?
-  href: http://help.tumblenet.tk
+  href: http://help.tumblenet.ga
 - title: TumbleNet Live
   image-url: /images/services/live.png
   text: See us Live
-  href: http://live.tumblenet.tk
+  href: http://live.tumblenet.ga
