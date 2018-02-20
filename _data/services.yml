@@ -13,7 +13,7 @@
   href: http://wiki.tumblenet.ga
   text: Learn about the Tumble Network
 - title: TumbleNet Downloads
-  image-url:/images/services/downloads.png
+  image-url: /images/services/downloads.png
   href: http://downloads.tumblenet.ga
   text: Download... Stuff
 - title: TumbleNet GitHub
@@ -32,6 +32,6 @@
   text: The History
   href: http://timeline.tumblenet.ga
 - title: TumbleNet Browse
-  image-url:/images/services/browser.png
+  image-url: /images/services/browser.png
   text: The old browser
   href: https://github.com/tumblenet/Tumble-NetBrowse
