@@ -26,9 +26,9 @@
   image-url: /images/services/live.png
   text: See us Live
   href: http://live.tumblenet.ga
-  - title: TumbleNet Timeline
+- title: TumbleNet Timeline
   text: The History
   href: http://timeline.tumblenet.ga
-    - title: TumbleNet Browse
+- title: TumbleNet Browse
   text: The old browser
   href: https://github.com/tumblenet/Tumble-NetBrowse
