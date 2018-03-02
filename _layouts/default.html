@@ -11,6 +11,11 @@ Current date: {{ site.time | date_to_string }}
 
 
 <head>
+   <script>
+var host = "{{site.url}}";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="theme-color" content="#F44336">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
