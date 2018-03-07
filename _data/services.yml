@@ -20,10 +20,6 @@
   image-url: /images/services/downloads.png
   href: http://downloads.tumblenet.ga
   text: Download... Stuff
-- title: TumbleNet GitHub
-  text: See our current projects
-  image-url: /images/services/github.png
-  href: http://github.tumblenet.ga
 - title: TumbleNet Help
   image-url: /images/services/help.png
   text: Need any help?
@@ -47,3 +43,7 @@
   #image-url: /images/services/browser.png
   text: CSS framework that will be used on most of the Tumble Netwok Websites
   href: http://tumblenet-css.tumblenet.ga
+- title: TumbleNet GitHub
+  text: See our current projects
+  image-url: /images/services/github.png
+  href: http://github.tumblenet.ga
