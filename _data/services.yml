@@ -12,10 +12,6 @@
     href: http://tumblegamer.blog.tumblenet.ga
   - title: DBW Blog
     href: http://doctorbatmanwho.blog.tumblenet.ga
-- title: Wiki
-  image-url: /images/services/wiki.png
-  href: http://wiki.tumblenet.ga
-  text: Learn about the Tumble Network
 - title: TumbleNet Downloads
   image-url: /images/services/downloads.png
   href: http://downloads.tumblenet.ga
@@ -24,6 +20,10 @@
   image-url: /images/services/help.png
   text: Need any help?
   href: http://help.tumblenet.ga
+- title: Wiki
+  image-url: /images/services/wiki.png
+  href: http://wiki.tumblenet.ga
+  text: Learn about the Tumble Network
 - title: TumbleNet Live
   image-url: /images/services/live.png
   text: See us Live
@@ -31,10 +31,6 @@
 - title: TumbleNet Timeline
   text: The History
   href: http://timeline.tumblenet.ga
-- title: TumbleNet Browse
-  image-url: /images/services/browser.png
-  text: The old browser
-  href: https://github.com/tumblenet/Tumble-NetBrowse
 - title: TumbleNet Archive
   #image-url: /images/services/browser.png
   text: An archive of what once was.
@@ -43,6 +39,10 @@
   #image-url: /images/services/browser.png
   text: CSS framework that will be used on most of the Tumble Netwok Websites
   href: http://tumblenet-css.tumblenet.ga
+- title: TumbleNet Browse
+  image-url: /images/services/browser.png
+  text: The old browser
+  href: https://github.com/tumblenet/Tumble-NetBrowse
 - title: TumbleNet GitHub
   text: See our current projects
   image-url: /images/services/github.png
