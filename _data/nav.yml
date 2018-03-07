@@ -10,6 +10,7 @@
   href: /videos/
 - title: Blog
   href: /blog/
+  type: dropdown
   dropdown:
   - title: Tags
     href: /blog/tags/
