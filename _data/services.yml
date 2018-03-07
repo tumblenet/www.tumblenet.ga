@@ -35,3 +35,11 @@
   image-url: /images/services/browser.png
   text: The old browser
   href: https://github.com/tumblenet/Tumble-NetBrowse
+- title: TumbleNet Archive
+  #image-url: /images/services/browser.png
+  text: An archive of what once was.
+  href: https://archive.tumblenet.ga
+- title: TumbleNet CSS
+  image-url: /images/services/browser.png
+  text: CSS framework that will be used on most of the Tumble Netwok Websites
+  href: http://tumblenet-css.tumblenet.ga
