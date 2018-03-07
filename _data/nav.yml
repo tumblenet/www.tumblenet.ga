@@ -19,6 +19,3 @@
     href: /blog/archive/
 - title: Services
   href: /services/
-- title: Archive Us
-  type: button
-  href: javascript:location.href='https://web.archive.org/save/_embed/'+document.location.href;
