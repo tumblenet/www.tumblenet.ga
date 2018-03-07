@@ -12,33 +12,33 @@
     href: http://tumblegamer.blog.tumblenet.ga
   - title: DBW Blog
     href: http://doctorbatmanwho.blog.tumblenet.ga
-- title: TumbleNet Downloads
-  image-url: /images/services/downloads.png
-  href: http://downloads.tumblenet.ga
-  text: Download... Stuff
 - title: TumbleNet Help
   image-url: /images/services/help.png
   text: Need any help?
   href: http://help.tumblenet.ga
-- title: Wiki
-  image-url: /images/services/wiki.png
-  href: http://wiki.tumblenet.ga
-  text: Learn about the Tumble Network
-- title: TumbleNet Live
-  image-url: /images/services/live.png
-  text: See us Live
-  href: http://live.tumblenet.ga
-- title: TumbleNet Timeline
-  text: The History
-  href: http://timeline.tumblenet.ga
-- title: TumbleNet Archive
-  #image-url: /images/services/browser.png
-  text: An archive of what once was.
-  href: https://archive.tumblenet.ga
 - title: TumbleNet CSS
   #image-url: /images/services/browser.png
   text: CSS framework that will be used on most of the Tumble Netwok Websites
   href: http://tumblenet-css.tumblenet.ga
+- title: Wiki
+  image-url: /images/services/wiki.png
+  href: http://wiki.tumblenet.ga
+  text: Learn about the Tumble Network
+- title: TumbleNet Downloads
+  image-url: /images/services/downloads.png
+  href: http://downloads.tumblenet.ga
+  text: Download... Stuff
+- title: TumbleNet Live
+  image-url: /images/services/live.png
+  text: See us Live
+  href: http://live.tumblenet.ga
+- title: TumbleNet Archive
+  #image-url: /images/services/browser.png
+  text: An archive of what once was.
+  href: https://archive.tumblenet.ga
+- title: TumbleNet Timeline
+  text: The History
+  href: http://timeline.tumblenet.ga
 - title: TumbleNet Browse
   image-url: /images/services/browser.png
   text: The old browser
