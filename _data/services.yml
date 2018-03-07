@@ -1,5 +1,5 @@
 - title: TumbleNet Search
-  image-url: /images/services/browser.png
+  #image-url: /images/services/browser.png
   text: Search Tumble Network and the Web
   href: https://Tumble-NetSearch.tumblenet.ga
 - title: Blog
@@ -44,6 +44,6 @@
   text: An archive of what once was.
   href: https://archive.tumblenet.ga
 - title: TumbleNet CSS
-  image-url: /images/services/browser.png
+  #image-url: /images/services/browser.png
   text: CSS framework that will be used on most of the Tumble Netwok Websites
   href: http://tumblenet-css.tumblenet.ga
