@@ -1,15 +1,27 @@
 title: Tumble Network
-url: http://www.tumblenet.ga
+description: > # this means to ignore newlines until "baseurl:"
+  The home of TG and DBW
+base-url: ""
+url: "http://www.tumblenet.ga" # the base hostname & protocol for your site, e.g. http://example.com
+repository: tumblenet/website-template
+
+favicon: /images/logo.png
 logo-url: /images/logo.png
-permalink: /blog/:categories/:year/:month/:day/:title/
+
+
 disqus-shortname: tumble-network-beta
 excerpt_separator: <!--more-->
-mobile-nav-on-desktop: true
-production: true
+mobile-nav-on-desktop: false
+
 collections:
   team:
     output: true
   carousel:
+
+#permalink: pretty
+permalink: /blog/:categories/:year/:month/:day/:title/
+production: true
+
 
 plugins:
    - jekyll-mentions
