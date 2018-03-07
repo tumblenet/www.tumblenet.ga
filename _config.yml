@@ -4,10 +4,43 @@ logo-url: /images/logo.png
 permalink: /blog/:categories/:year/:month/:day/:title/
 disqus-shortname: tumble-network-beta
 excerpt_separator: <!--more-->
-exclude: [vendor]
 mobile-nav-on-desktop: true
 production: true
 collections:
   team:
     output: true
   carousel:
+
+plugins:
+   - jekyll-mentions
+   - jemoji
+   - jekyll-redirect-from
+   - jekyll-sitemap
+   - jekyll-feed
+   - jekyll-seo-tag
+
+
+# Build settings
+markdown: kramdown
+# theme: minima
+
+kramdown:
+  # Enable GitHub Flavored Markdown (fenced code blocks)
+  input: GFM
+  # Disable auto-generated ID's for headings
+  auto_ids: false
+
+excludes:
+  - lib
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - bower.json
+  - "*.sh"
+  - README.md
+  - gulffile.js
+  - package.json
+  - vendor
+  - ".gitignore"
+  - CNAME
+  - icomoon-selection.json
