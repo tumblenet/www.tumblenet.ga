@@ -4,7 +4,7 @@ title: "Welcome to Jekyll!"
 date: "2016-10-31 18:27"
 author: tumblegamer
 categories: jekyll update
-tags: these are some tags
+tags:
 comments: true
 ---
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
