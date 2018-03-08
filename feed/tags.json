@@ -1,4 +1,4 @@
 ---
 layout: none
 ---
-{{ tags | jsonify }}
+{{ site.tags | jsonify }}
