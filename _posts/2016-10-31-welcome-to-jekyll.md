@@ -5,6 +5,7 @@ date: 2016-10-31 00:00:00 +0000
 author: tumblegamer
 categories:
 - jekyll
+- update
 tags: 
 comments: true
 ---
