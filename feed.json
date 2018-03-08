@@ -1,0 +1,4 @@
+---
+permalink: feed.json
+---
+{{site.posts | stringify }}
