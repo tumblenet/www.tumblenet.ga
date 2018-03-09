@@ -4,7 +4,7 @@ title: Archive
 ---
 <div class="row">
   <div class="col s12 m9 l10">
-    {% for post in site.posts  %}
+    {% for post in site.data.blog.posts  %}
         {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
         {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
         {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
@@ -42,7 +42,7 @@ title: Archive
         <h5>Archive</h5>
         <!--li><a href="#top">top</a></li-->
 
-        {% for post in site.posts  %}
+        {% for post in site.data.blog.posts %}
             {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
             {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
             {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
