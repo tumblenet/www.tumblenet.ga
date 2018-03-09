@@ -23,13 +23,16 @@ permalink: /blog/:categories/:year/:month/:day/:title/
 production: true
 
 
+
 plugins:
-   - jekyll-mentions
-   - jemoji
-   - jekyll-redirect-from
-   - jekyll-sitemap
-   - jekyll-feed
-   - jekyll-seo-tag
+ - jekyll-feed
+ - jekyll-redirect-from
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-avatar
+ - jemoji
+ - jekyll-mentions
+ - jekyll-include-cache
 
 
 # Build settings
