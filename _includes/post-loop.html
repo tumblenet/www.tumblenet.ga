@@ -23,7 +23,7 @@
         {% endif %}{{ author.title }}
       </div>
     </a>
-    {% for category in post.categories %}
+    {% for category in post.category %}
       <a href="/blog/categories/#{{ category | slugize }}"><div class="chip">{{ category }}</div></a>
     {% endfor %}
   </p>
