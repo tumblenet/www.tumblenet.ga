@@ -2,10 +2,10 @@
   href: /about/
   type: dropdown
   dropdown:
-  - title: Team
-    href: /team/
   - title: Stats
     href: /stats/
+- title: Team
+  href: /team/
 - title: Videos
   href: /videos/
 - title: Blog
