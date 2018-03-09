@@ -33,7 +33,7 @@ title: Home
 
   <h2>Recent Posts</h2>
   <div class="row">
-    {% for post in site.posts limit: 8 %}
+    {% for post in site.data.blog.posts limit: 8 %}
     {% include post-loop.html spacing="s12 m6 l3" %}
     {% endfor %}
    </div></div>
