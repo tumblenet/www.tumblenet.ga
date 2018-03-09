@@ -13,7 +13,7 @@ title: Categories
           <div class="card-content">
             <span class="card-title">Catagories</span>
             <ul>
-            {% for category in site.categories %}
+            {% for category in site.data.blog.categories %}
               {% capture category_name %}{{ category | first }}{% endcapture %}
             <li><div class="chip">
               <a href="{{ page.url }}#{{ category_name | slugize }}">{{ category_name | slugize }}</a>
@@ -24,7 +24,7 @@ title: Categories
         </div>
     </div>
 
-    {% for category in site.categories %}
+    {% for category in site.data.blog.categories %}
       {% capture category_name %}{{ category | first }}{% endcapture %}
       <div id="{{ category_name | slugize }}" class="section scrollspy">
         <br><br>
@@ -42,7 +42,7 @@ title: Categories
     <ul class="section table-of-contents pinned">
       <h5>Catagories</h5>
       <!--li><a href="#top">top</a></li-->
-      {% for category in site.categories %}
+      {% for category in site.data.blog.categories %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <li><a href="#{{ category_name | slugize }}">{{ category_name | slugize }}</a></li>
       {% endfor %}
