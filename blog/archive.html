@@ -9,7 +9,11 @@ title: Archive
         {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
         {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
         {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-
+    THIS_YEAR:{{this_year}}
+    THIS_MONTH{{this_month}}
+    NEXT_YEAR:{{next_year}}
+    NEXT_MONTH{{nextmonth}}
+    
         {% if forloop.first %}
         <h2 id="{{ this_year }}" class="section scrollspy">{{this_year}}</h2>
         <h3 id="{{ this_year }}-{{ this_month }}" class="section scrollspy">{{ this_month }}</h3>
