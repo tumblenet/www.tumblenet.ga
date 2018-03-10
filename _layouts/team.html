@@ -1,7 +1,7 @@
 ---
 layout: default-breadcrumbs
 ---
-{% assign posts = site.data.blog.posts | where_exp: "post", "post.author == page.author-id" %}
+{% assign posts = site.data.blog.posts | where_exp: "item", "item.author == page.author-id" %}
 <div class="parallax-container">
       <div class="parallax"><img src="{{ page.banner | default: "https://lh3.googleusercontent.com/f_gkHBJBX6nuIh26EJ940n1M4rCViPxG-J9lG8WoCfsj5EZUxgTsuc6UvkK8a1yidFeneubIEBCMVQzJJXwAiny2nUUNr79F_G2jl8i-5D_b2lj7yzhXrnB7cSVy_WFZP8fUWi5u9_wPseFSBliFwCJi8it7YIF_Abh6LEoQXwDSevYu6Ec58l3Pr4Lkk-c5cj9aLVCseOW93o75GoS4bvdOcv3SOakFfklO-gUu53c9qoEjK5m71kTWYurWgGWnTSIZv0AGbYckAQIs7KqUUwmSR3A0iUfvcGg309uB8YYVEWDwlCVq53Rl7W6U-VkaZBoSd9UJ8C_GW23SvusrserL0C19Ov4CBCxL0Zh7uGof9--kVkffCAoiPLoqbNUzz8-bVu3E3fE-GdPO2L4VQvTZzZ7rgxITPM1AXjk6UuEsiXxDmW97l4xRoz__XBim9m1v4P_WAp1F2-Z2ruRss-fd9sV_FuzaT3fnNDvTFRzxorI5cTAjgmsBbimhFk2zycNzFvDTYtcdkvXBnw-Phu0W05U3xsXlUAkIyfE175YDdBcA-cjcY4vrTjYxxbvsBt-F-rxvL7h4B54EslTLqFeBOkz-tIsaTy-dMRT74dJxlykzu0a1XUT0C5wqlCJXxLubYoQXBRJgDhD3Mb9srOb7Nj5HSQO9pw=w559-h314-no"}}"></div>
 </div>
