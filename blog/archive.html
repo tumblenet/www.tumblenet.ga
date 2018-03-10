@@ -9,8 +9,7 @@ title: Archive
         {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
         {% capture next_year %}{{ site.data.blog.posts[forloop.index].date | date: "%Y" }}{% endcapture %}
         {% capture next_month %}{{ site.data.blog.posts[forloop.index].date | date: "%B" }}{% endcapture %}
-    
-        {% if forloop.first %}
+{% if forloop.first %}
         <h2 id="{{ this_year }}" class="section scrollspy">{{this_year}}</h2>
         <h3 id="{{ this_year }}-{{ this_month }}" class="section scrollspy">{{ this_month }}</h3>
         <ul>
@@ -36,12 +35,10 @@ title: Archive
         {% endif %}
     {% endfor %}
   </div>
-
     <div class="col hide-on-small-only m3 l2">
       <ul class="section table-of-contents pinned">
         <h5>Archive</h5>
         <!--li><a href="#top">top</a></li-->
-
         {% for post in site.data.blog.posts %}
             {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
             {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
@@ -52,7 +49,6 @@ title: Archive
             <li><a href="#{{ this_year }}">{{this_year}}</a></li>
             <li><a href="#{{ this_year }}-{{ this_month }}">{{ this_month }}</a></l1>
             {% endif %}
-
             {% if forloop.last %}
             {% else %}
                 {% if this_year != next_year %}
@@ -64,15 +60,7 @@ title: Archive
                     {% endif %}
                 {% endif %}
             {% endif %}
-        {% endfor %}
-
-
-
-
-
-      </ul>
+        {% endfor %}</ul>
     </div>
-
-
   </div>
 </div>
