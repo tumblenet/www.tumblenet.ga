@@ -134,7 +134,7 @@ href="{{ item.href }}"
                {{ item.title }}
                {% if item.href == "/blog/" %}
                <span class="new badge" data-badge-caption="post(s)">
-                 {{ site.posts.size }}
+                 {{ site.data.blog.posts.size }}
                </span>
                {% endif %}
                {% if item.dropdown %}
