@@ -3,7 +3,7 @@ description: > # this means to ignore newlines until "baseurl:"
   The home of TG and DBW
 base-url: ""
 url: "http://www.tumblenet.ga" # the base hostname & protocol for your site, e.g. http://example.com
-repository: tumblenet/website-template
+repository: tumblenet/beta.tumblenet.cu.cc
 
 favicon: /images/logo.png
 logo-url: /images/logo.png
@@ -43,7 +43,7 @@ kramdown:
   # Enable GitHub Flavored Markdown (fenced code blocks)
   input: GFM
   # Disable auto-generated ID's for headings
-  auto_ids: false
+  auto_ids: true
 
 excludes:
   - lib
