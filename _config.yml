@@ -1,5 +1,5 @@
 title: Tumble Network
-description: > # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until "baseurl:"
   The home of TG and DBW
 base-url: ""
 url: "http://www.tumblenet.ga" # the base hostname & protocol for your site, e.g. http://example.com
@@ -18,8 +18,8 @@ collections:
     output: true
   carousel:
 
-#permalink: pretty
-permalink: /blog/:categories/:year/:month/:day/:title/
+permalink: pretty
+#permalink: /blog/:categories/:year/:month/:day/:title/
 production: true
 
 
