@@ -3,13 +3,12 @@
       {% if service.image-url %}
       <div class="card-image">
         <img src="{{ service.image-url }}" class=" activator">
-        <span class="card-title activator">{{ service.title }}</span>
       </div>
       <div class="card-content ">
-      {% else %}
+      {% endif %}
       <div class="card-content">
         <span class="card-title activator">{{ service.title }}</span>
-      {% endif %}
+      
 
       <p>{{ service.text }}</p>
       </div>
