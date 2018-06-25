@@ -11,7 +11,7 @@
   twitter: drbatmanwho
   youtube: UCIN6g84BIlbgodmCwJaB2OA
   youtube-id: "true"
-  twitch:
+  twitch: doctorbatmanwho
   github: doctorbatmanwho
   googleplus: DoctorBatmanWho
   customtab:
