@@ -27,7 +27,7 @@ description: Welcome to Tumble Network
  <div class="container"> <h2>Services</h2>
   <div class="row ">
       {% for service in site.data.services limit: 8 %}
-      {% include service-loop.html spacing="s12 m12 l6" %}
+      {% include service-loop.htm l%}
       {% endfor %}
   </div>
 
@@ -35,6 +35,6 @@ description: Welcome to Tumble Network
   <h2>Recent Posts</h2>
   <div class="row">
     {% for post in site.data.blog.posts limit: 8 %}
-    {% include post-loop.html spacing="s12 m12 l6" %}
+    {% include post-loop.html %}
     {% endfor %}
    </div></div>
