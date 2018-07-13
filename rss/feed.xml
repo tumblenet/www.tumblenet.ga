@@ -16,7 +16,7 @@ layout: null
       <name>{{ author.title }}</author>
       {% if author.image-url %}
       <avatar>{{ author.image-url }}</avatar>
-      {% else %}
+      {% endif %}
     </author>
     {% for category in post.category %}
 		<category>{{ category }}</category>
