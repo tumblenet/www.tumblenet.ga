@@ -11,7 +11,5 @@ comments: false
 - Do not spam the chat. put it here: #oof-topic 
 - Use common sense. If you are unsure if something is allowed or not ask the staff before doing it.
 - Please write in English if possible and if not please write in this format:
-  ```
-  [native language initials]: Message in your language
-  ENG: (use google translate for this part)
-  ```
+[native language initials]: Message in your language
+ENG: (use google translate for this part)
