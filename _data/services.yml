@@ -28,9 +28,15 @@
   #image-url: /images/services/browser.png
   text: CSS framework that will be used on most of the Tumble Netwok Websites
   href: http://tumblenet-css.tumblenet.ga
+- title: Discord
+  links:
+  - title: TumbleNet Discord
+    link: http://discord.tumblenet.ga
+  - title: TumbleNet API (Bot Support)
+  - title: Who wants to be a millionare
+  - title: TumbleBand
 - title: TumbleCast
   text: Coming soon
-  href: #
 - title: Wiki
   image-url: /images/services/wiki.png
   href: http://wiki.tumblenet.ga
