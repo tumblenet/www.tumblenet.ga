@@ -3,9 +3,13 @@
   image-url: /images/services/tumblecraft-avatar.png
   href: http://tumblecraft.tumblenet.ga
 - title: TumbleNet Search
-  #image-url: /images/services/browser.png
+  image-url: /images/services/search.png
   text: Search Tumble Network and the Web
   href: http://github.tumblenet.ga/Tumble-NetSearch
+- title: TNPhone
+  image-url: /images/services/tn-phone.png
+  text: Talk between discord servers
+  href: http://tn-phone.tumblenet.ga
 - title: Blog
   image-url: /images/services/blog.png
   text: Blog
@@ -24,6 +28,8 @@
   #image-url: /images/services/browser.png
   text: CSS framework that will be used on most of the Tumble Netwok Websites
   href: http://tumblenet-css.tumblenet.ga
+- title: TumbleCast
+  text: Coming soon
 - title: Wiki
   image-url: /images/services/wiki.png
   href: http://wiki.tumblenet.ga
