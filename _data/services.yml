@@ -25,7 +25,7 @@
   text: Need any help?
   href: http://help.tumblenet.ga
 - title: TumbleNet CSS
-  #image-url: /images/services/browser.png
+  image-url: /images/services/css.png
   text: CSS framework that will be used on most of the Tumble Netwok Websites
   href: http://tumblenet-css.tumblenet.ga
 - title: Discord
