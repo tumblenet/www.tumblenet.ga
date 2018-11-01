@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: What is Tumble Network?
 author: doctorbatmanwho
 comments: true
 ---
