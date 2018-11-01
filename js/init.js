@@ -22,3 +22,9 @@
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+var toggleSearch = function(){
+	$('.mobile-search-bar').toggleClass('hide');
+	$('.mobile-search-bar label').toggleClass('active');
+	$('#mobile-search').focus();
+}
