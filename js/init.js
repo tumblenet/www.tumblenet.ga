@@ -42,4 +42,4 @@ var closeSearch = function(){
 
 $('#mobile-search').focusout(function() {
 	closeSearch();
-)};
+});
