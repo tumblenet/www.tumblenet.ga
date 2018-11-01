@@ -39,3 +39,7 @@ var closeSearch = function(){
 	$('.mobile-search-bar').removeClass('hide');
 	$('.mobile-search-bar label').removeClass('active');
 }
+
+$('#mobile-search').focusout(function() {
+	closeSearch();
+);
