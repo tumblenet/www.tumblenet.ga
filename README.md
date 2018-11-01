@@ -44,7 +44,7 @@ Add additional notes about how to deploy this on a live system
 * [Travis](https://travis-ci.org) - Used to test build status
 
 ## Contributing
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md][contributing]on our code of conduct, and the process for submitting pull requests to us.
 
 * [Request Features][features]
 * [Submit bugs or anything unusual with the website][issues]
@@ -61,7 +61,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 See also the list of [contributors](https://github.com/tumblenet/beta.tumblenet.cu.cc/contributors) who participated in this project.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md][license] file for details
 
 ## Acknowledgments
 * Hat tip to anyone who's code was used
@@ -72,7 +72,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [features]: #15
 [feedback]: #16
 [todo]: #17
-[lisence]: LICENSE.md
+[license]:LICENSE.md
+[contributing]:.ithub/CONTRIBUTING.md
 [jekyll-install]: http://jekyllrb.com/docs/installation/
 [atom-website]: http://atom.io
 [travis]: https://travis-ci.org/tumblenet/beta.tumblenet.cu.cc
