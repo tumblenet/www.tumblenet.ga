@@ -170,7 +170,7 @@ href="{{ item.href }}"
           {% endunless %}
 
        <ul class="{% unless site.mobile-nav-on-desktop %}hide-on-large-only{% endunless %} right">
-         <li><a href="javascript:$('.mobile-search-bar').toggleClass('hide');"><i class="material-icons">search</i></a></li>
+         <li><a href="javascript:toggleSearch();"><i class="material-icons">search</i></a></li>
        </ul>
 
          <ul id="nav-mobile" class="side-nav">
