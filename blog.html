@@ -3,7 +3,7 @@
   title: Blog
 ---
 <div class="row container">
-  {% for post in site.posts %}
+  {% for post in site.data.blog.posts %}
   {% include post-loop.html %}
   {% endfor %}
 </div>

@@ -13,10 +13,9 @@ title: Categories
           <div class="card-content">
             <span class="card-title">Catagories</span>
             <ul>
-            {% for category in site.categories %}
-              {% capture category_name %}{{ category | first }}{% endcapture %}
+            {% for category in site.data.blog.categories %}
             <li><div class="chip">
-              <a href="{{ page.url }}#{{ category_name | slugize }}">{{ category_name | slugize }}</a>
+              <a href="{{ page.url }}#{{ category | slugize }}">{{ category | slugize }}</a>
             </div></li>
             {% endfor %}
             </ul>
@@ -24,15 +23,16 @@ title: Categories
         </div>
     </div>
 
-    {% for category in site.categories %}
-      {% capture category_name %}{{ category | first }}{% endcapture %}
-      <div id="{{ category_name | slugize }}" class="section scrollspy">
+    {% for category in site.data.blog.categories %}
+      <div id="{{ category | slugize }}" class="section scrollspy">
         <br><br>
-        <h3 class="category-head">Category: {{ category_name }}</h3>
-        <a name="{{ category_name | slugize }}"></a>
+        <h3 class="category-head">Category: {{ category }}</h3>
+        <a name="{{ category | slugize }}"></a>
         <div class="row">
-          {% for post in site.categories[category_name] %}
+          {% for post in site.data.blog.posts %}
+          {% if post.category==category %}
           {% include post-loop.html %}
+          {% endif %}
           {% endfor %}
         </div>
       </div>
@@ -42,9 +42,8 @@ title: Categories
     <ul class="section table-of-contents pinned">
       <h5>Catagories</h5>
       <!--li><a href="#top">top</a></li-->
-      {% for category in site.categories %}
-        {% capture category_name %}{{ category | first }}{% endcapture %}
-        <li><a href="#{{ category_name | slugize }}">{{ category_name | slugize }}</a></li>
+      {% for category in site.data.blog.categories %}
+        <li><a href="#{{ category | slugize }}">{{ category | slugize }}</a></li>
       {% endfor %}
     </ul>
   </div>

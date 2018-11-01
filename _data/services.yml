@@ -1,29 +1,67 @@
+- title: TumbleCraft
+  text: Our First Minecraft Server
+  image-url: /images/services/tumblecraft-avatar.png
+  href: http://tumblecraft.tumblenet.ga
+- title: TumbleNet Search
+  image-url: /images/services/search.png
+  text: Search Tumble Network and the Web
+  href: http://github.tumblenet.ga/Tumble-NetSearch
+- title: TNPhone
+  image-url: /images/services/tn-phone.png
+  text: Talk between discord servers
+  href: http://tnphone.tumblenet.ga
 - title: Blog
   image-url: /images/services/blog.png
   text: Blog
   links:
   - title: Blog Home
-    href: http://blog.tumblenet.tk
+    href: http://blog.tumblenet.ga
   - title: TumbleGamer Blog
-    href: http://tumblegamer.blog.tumblenet.tk
+    href: http://tumblegamer.blog.tumblenet.ga
   - title: DBW Blog
-    href: http://doctorbatmanwho.blog.tumblenet.tk
-- title: URL-Shortener
-  image-url: /images/services/short-url.png
-  href: http://short-url.tumblenet.tk
-  text: Make your long urls Short
-- title: TumbleNet Downloads
-  href: http://downloads.tumblenet.tk
-  text: Download... Stuff
-- title: TumbleNet GitHub
-  text: See our current projects
-  image-url: /images/services/github.png
-  href: http://github.tumblenet.tk
+    href: http://doctorbatmanwho.blog.tumblenet.ga
 - title: TumbleNet Help
   image-url: /images/services/help.png
   text: Need any help?
-  href: http://help.tumblenet.tk
+  href: http://help.tumblenet.ga
+- title: TumbleNet CSS
+  image-url: /images/services/css.png
+  text: CSS framework that will be used on most of the Tumble Netwok Websites
+  href: http://tumblenet-css.tumblenet.ga
+- title: Discord
+  links:
+  - title: TumbleNet Discord
+    href: http://discord.tumblenet.ga
+  - title: TumbleNet API (Bot Support)
+  - title: Who wants to be a millionare
+  - title: TumbleBand
+- title: TumbleCast
+  text: Coming soon
+  image-url: /images/services/tumble-cast.png
+- title: Wiki
+  image-url: /images/services/wiki.png
+  href: http://wiki.tumblenet.ga
+  text: Learn about the Tumble Network
+- title: TumbleNet Downloads
+  image-url: /images/services/downloads.png
+  href: http://downloads.tumblenet.ga
+  text: Download... Stuff
 - title: TumbleNet Live
   image-url: /images/services/live.png
   text: See us Live
-  href: http://live.tumblenet.tk
+  href: http://live.tumblenet.ga
+- title: TumbleNet Archive
+  #image-url: /images/services/browser.png
+  text: An archive of what once was.
+  href: https://archive.tumblenet.ga
+- title: TumbleNet Timeline
+  text: The History
+  href: http://timeline.tumblenet.ga
+- title: TumbleNet Browse
+  image-url: /images/services/browser.png
+  text: The old browser
+  href: https://github.com/tumblenet/Tumble-NetBrowse
+- title: TumbleNet GitHub
+  text: See our current projects
+  image-url: /images/services/github.png
+  href: http://github.tumblenet.ga

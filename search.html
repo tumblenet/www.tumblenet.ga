@@ -48,7 +48,7 @@ author: tumblegamer
 </script>
 <script>
   window.store = {
-    {% for post in site.posts %}
+    {% for post in site.data.blog.pages %}
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",

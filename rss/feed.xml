@@ -1,0 +1,38 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>{{site.titke}}</title>
+  <link>{{site.url}}</link>
+  <description>{{site.tagline}}</description>
+  {% for post in site.data.blog.posts %}
+  {% assign author = site.team | where:"author-id", post.author | first %}
+  <item>
+    <title>{{site.title}}</title>
+		<author>
+      <name>{{ author.title }}</author>
+      {% if author.image-url %}
+      <avatar>{{ author.image-url }}</avatar>
+      {% endif %}
+    </author>
+    {% for category in post.category %}
+		<category>{{ category }}</category>
+    {% endfor %}
+    {% for tag in post.tags %}
+		<tags>These</tags>
+    {% endfor %}
+		<date>{{post.date}}</date>
+		<excerpt>
+			{{ post.excerpt }}
+		</excerpt>
+		<url>{{ post.url }}</url>
+		<content>
+			{{ post.content }}
+		</content>
+  </item>
+  {% endfor %}
+</channel>
+</rss>

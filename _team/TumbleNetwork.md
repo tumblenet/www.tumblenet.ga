@@ -4,7 +4,7 @@
   title: TumbleBot
   tagline:
   color: black white-text
-  gravatar-hash: 04b778b7a78b66763335e59fa4b9dd20
+  gravatar-hash: 4c1daf1cfa3bd9be34efc536e03b1bda
   banner:
   blog-url:
   facebook: TumbleNetwork

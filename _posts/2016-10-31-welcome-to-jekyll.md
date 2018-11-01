@@ -1,10 +1,15 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
-date: "2016-10-31 18:27"
+title: Welcome to Jekyll!
+date: 2016-10-31 00:00:00 +0000
 author: tumblegamer
-categories: jekyll update
+categories:
+- jekyll
+- update
 tags: 
+- These
+- are
+- tags
 comments: true
 ---
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

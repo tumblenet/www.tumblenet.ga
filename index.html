@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Home
+description: Welcome to Tumble Network
+
 ---
 
 <div class="slider">
@@ -25,14 +27,14 @@ title: Home
  <div class="container"> <h2>Services</h2>
   <div class="row ">
       {% for service in site.data.services limit: 8 %}
-      {% include service-loop.html spacing="s12 m6 l3" %}
+      {% include service-loop.html %}
       {% endfor %}
   </div>
 
 
   <h2>Recent Posts</h2>
   <div class="row">
-    {% for post in site.posts limit: 8 %}
-    {% include post-loop.html spacing="s12 m6 l3" %}
+    {% for post in site.data.blog.posts limit: 8 %}
+    {% include post-loop.html %}
     {% endfor %}
    </div></div>

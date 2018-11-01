@@ -2,14 +2,15 @@
   href: /about/
   type: dropdown
   dropdown:
-  - title: Team
-    href: /team/
   - title: Stats
     href: /stats/
+- title: Team
+  href: /team/
 - title: Videos
   href: /videos/
 - title: Blog
   href: /blog/
+  type: dropdown
   dropdown:
   - title: Tags
     href: /blog/tags/
@@ -19,6 +20,3 @@
     href: /blog/archive/
 - title: Services
   href: /services/
-- title: Archive Us
-  type: button
-  href: javascript:location.href='https://web.archive.org/save/_embed/'+document.location.href;

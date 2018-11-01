@@ -1,12 +1,68 @@
 title: Tumble Network
-url: http://beta.tumblenet.tk
+tagline: The home of TG and DBW
+description: >- # this means to ignore newlines until "baseurl:"
+  Tumble Network - Where dreams come true, gamers unite and heroes are needed!
+  Welcome to Tumble Network, the banner under which you will find TumbleGamer and Doctor Batman Who,
+  two YouTube channels who post a wide range of videos. TumbleGamer is a gamer, who loves to show the
+  world videos of Mario and Nintendo, along with Minecraft and other popular games.
+  DBW is fluent in rescore, adding new and exciting music to many icnonic scenes from television,
+  film and game. Along with this, DBW also makes music mixes and short comedy sketches.
+  So welcome once again to the network - please have a great time! :D
+base-url: ""
+url: "http://www.tumblenet.ga" # the base hostname & protocol for your site, e.g. http://example.com
+repository: tumblenet/beta.tumblenet.cu.cc
+
+favicon: /images/logo.png
 logo-url: /images/logo.png
-permalink: /blog/:categories/:year/:month/:day/:title/
+
+
 disqus-shortname: tumble-network-beta
 excerpt_separator: <!--more-->
-exclude: [vendor]
-mobile-nav-on-desktop: true
+mobile-nav-on-desktop: false
+
 collections:
   team:
     output: true
   carousel:
+
+permalink: pretty
+#permalink: /blog/:categories/:year/:month/:day/:title/
+production: true
+
+
+
+plugins:
+ - jekyll-feed
+ - jekyll-redirect-from
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-avatar
+ - jemoji
+ - jekyll-mentions
+#- jekyll-include-cache
+
+
+# Build settings
+markdown: kramdown
+# theme: minima
+
+kramdown:
+  # Enable GitHub Flavored Markdown (fenced code blocks)
+  input: GFM
+  # Disable auto-generated ID's for headings
+  auto_ids: true
+
+excludes:
+  - lib
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - bower.json
+  - "*.sh"
+  - README.md
+  - gulffile.js
+  - package.json
+  - vendor
+  - ".gitignore"
+  - CNAME
+  - icomoon-selection.json
