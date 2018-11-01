@@ -28,3 +28,14 @@ var toggleSearch = function(){
 	$('.mobile-search-bar label').toggleClass('active');
 	$('#mobile-search').focus();
 }
+
+var openSearch = function(){
+	$('.mobile-search-bar').addClass('hide');
+	$('.mobile-search-bar label').addClass('active');
+	$('#mobile-search').focus();
+}
+
+var closeSearch = function(){
+	$('.mobile-search-bar').removeClass('hide');
+	$('.mobile-search-bar label').removeClass('active');
+}
