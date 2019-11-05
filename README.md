@@ -73,7 +73,7 @@ This project is licensed under the MIT License - see the [LICENSE.md][license] f
 [feedback]: #16
 [todo]: #17
 [license]:LICENSE.md
-[contributing]:.ithub/CONTRIBUTING.md
+[contributing]:.github/CONTRIBUTING.md
 [jekyll-install]: http://jekyllrb.com/docs/installation/
 [atom-website]: http://atom.io
 [travis]: https://travis-ci.org/tumblenet/beta.tumblenet.cu.cc
