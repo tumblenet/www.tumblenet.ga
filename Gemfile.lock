@@ -198,9 +198,9 @@ GEM
     minitest (5.11.3)
     multipart-post (2.0.0)
     net-dns (0.8.0)
-    nokogiri (1.10.4)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.4-x64-mingw32)
+    nokogiri (1.10.8-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     octokit (4.8.0)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -238,7 +238,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  nokogiri (~> 1.10.4)
+  nokogiri (~> 1.10.8)
 
 RUBY VERSION
    ruby 2.4.3p205
